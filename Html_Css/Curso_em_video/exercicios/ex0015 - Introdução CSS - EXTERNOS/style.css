@@ -1,0 +1,5 @@
+@charset "UTF-8"; 
+body {background-color: aqua; font-family: Arial, Helvetica, sans-serif; font-size: justify;}
+h1 {color: blue; background-color: rgb(200, 255, 0);}
+h2 {font-size: justify; font-family: Arial, Helvetica, sans-serif; color: darkred}
+    

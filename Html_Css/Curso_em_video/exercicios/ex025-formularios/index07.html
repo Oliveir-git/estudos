@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 7</title>
+    <style>
+        #main{margin:auto;text-align:center;}
+        h1{padding-top: 10%;}
+        fieldset{width:20vw;margin:auto;}
+        p{text-align: left;}
+    </style>
+</head>
+<body>
+    <main><div id="main">
+        
+            <h1>Formulario comum</h1>
+            <form action="cadastro.php" method="post">
+                <fieldset>
+                    <p>
+                        <label for="iestado">Estado</label>
+                        <select name="estado" id="iestado">
+                            <option value="---ESTADO---" selected>---ESTADO---</option>
+                            <optgroup label="Group 1">
+                                <option value="SP">Sao Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="Group 2">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="iprof">Profissão</label>
+                        <input type="text" id="iprof" name="prof" list="lstprof">
+                         <datalist id=lstprof>
+                            <optgroup label="Group 1">
+                                <option value="DEV">Desenvolvedor</option>
+                                <option value="COOK">Cozinheiro</option>
+                            </optgroup>
+                            <optgroup label="Group 2">
+                                <option value="MECHANIST">Mecanico</option>
+                                <option value="DOCTOR">Medico</option>
+                            </optgroup>
+                         </datalist>
+                    </p>
+                    <p>
+                        <label for="imsg" style="text-align:center; padding:0px 35%">Mensagem</label><br>
+                        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Ok"> <input type="reset" value="Resetar">
+                    </p>
+                </fieldset></form>
+    </div>
+    </main>
+</body>
+</html>

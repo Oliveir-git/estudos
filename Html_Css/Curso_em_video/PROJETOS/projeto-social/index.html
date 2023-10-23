@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Redes sociais</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        main {
+            background-image: url(imagens/Wallpaper.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+        }
+        #iphone { /*POSIÇÃO DO IPHONE*/
+            background: rgba(0, 0, 0, 0) url("imagens/frame-iphone.png") no-repeat top center;
+            position: absolute;
+            left: 50vw ; top: 50vh;
+            transform: translate(-50%, -50%);
+            width: 311px; height: 626px;
+        }
+        #conteudo /*POSIÇÃO DO CONTEUDO*/{
+            position: absolute;
+            left: 152px; top:313px;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 263px;
+            height: 468px;
+        }
+        iframe { /*TAMANHO DO IFRAME*/
+            width: 271px;    height: 474px;
+        }   
+        #logos { /*POSICIONAMENTO DOS LOGOS*/
+            
+            float: right;
+            height: 340px;
+            margin-top: 80px;
+            width: 40px;
+            padding: 10px 30px;
+        }
+        #logos img {
+            width: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-top: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
+        }
+        #logos img:hover {
+            border: 5px solid #EBF1EF;
+            box-shadow: 10px 10px 10px rgb(255, 255, 255);
+            border-radius: 50%;
+            box-sizing: content-box; /*IRA DEIXAR A BORDA DENTRO DA BOX#LOGOS*/
+            transform: translate(-10%);
+            transition: transform .5s, border 0.5s, box-shadow 2s;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <main>
+         <section id="iphone"> 
+        <span id="conteudo"><iframe title="tela de visual" name="tela" src="home.html" frameborder="0"></iframe></span>
+         </section>
+         <section id="logos">
+            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="LOGO 1"></a>
+            <a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt=" LOGO 2"></a>
+            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt=" LOGO 3"></a>
+            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt=" LOGO 4"></a>
+            <a href="twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt=" LOGO 5"></a>
+            <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt=" LOGO 6"></a>
+        </section>
+        
+
+
+    </main>
+
+
+
+</body>
+
+
+</html>

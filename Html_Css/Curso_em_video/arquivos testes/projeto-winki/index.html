@@ -1,0 +1,624 @@
+<!---Link do projeto https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal-->
+<!doctype html>
+<html lang="pr-br">
+    <head>
+        <title>Winkipedia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:visited {
+            color: #333399;;
+            }
+            abbr {
+                text-decoration: none;
+                color: #333399;
+            }
+            h1 {
+                font-variant: small-caps;
+            }
+            nav.menu,  span[id="menu"] > img, aside > img{
+                width: 30px;
+                height: 30px;
+            }
+
+            /* C L A S S - P A R A - F U N C O E S*/
+            .padding-ver {
+                padding: 20px 0px;
+            }
+            
+            .align {
+                text-align: center;
+            }
+
+            .padding-hor {
+                padding: 20px 10px;    
+            }
+            .blue {
+                color: #3366CF;
+            }
+            /*i m a g e m - w i k i*/
+            header {
+                background-color: rgba(0, 0, 0, 0.062);
+                height: 100px;
+                padding-top: 10px;
+            }
+            .inline {
+                display: inline-block;
+            }
+            input {
+                width: 300px;
+            }
+            /*P O S I Ç A O  D A S  O P C O E S*/
+
+            header > aside {
+                position: absolute;
+                right: 1vw;
+                transform: translate(-25%, -127%);
+                text-align: center;
+                color: blue;
+            }
+
+            header > aside > p:hover {
+                text-decoration: underline
+            }
+            img[alt="Clique e veja as opções"] {
+                width: 20px;
+                height: 20px;
+            }
+            span#opções {
+                position: relative;
+                top: 10px;
+            }
+         /*B A R R A  D E  P E S Q U I S A*/   
+        span[id] > p {
+            color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            transform: translate(-195%, 4%);
+            letter-spacing: 5px;
+
+        }
+        span > p:hover {
+            display: none;
+        }
+        /*M A I N*/
+        main {
+            padding-top: 40px;
+            height: 1000px;
+            width: 90vw;
+            margin:auto;
+        
+        }
+            /*H E A D E R - 2 */   
+            strong.pagina-principal  {
+            color: rgb(34, 34, 34);
+            border-bottom: thin solid rgb(34, 34, 34);
+            padding-bottom: 10px;
+            font-weight: lighter;
+
+        }
+            section#header2 {
+                  padding-bottom: 10px;
+                  border-right:rgb(34, 34, 34)
+            }
+            article#header2.bord > h1 {
+                color: rgb(93, 93, 93);
+                font-weight: lighter;
+                font-size: 32px;
+                padding-top: 10px ;
+            }
+            article#header2.bord > p{
+                font-size: 20px;
+            }
+            article#header2-a {
+                text-align: center;
+                padding-top: 50px ;
+                font-size: 18px
+            }
+            article#header2-a > aside{
+                padding-top: 10px;
+
+            }
+            p#p-header2, article#header2 > h1 {
+                text-align: center;
+            }
+            p#p-header2 {
+                padding-top: 10px
+            }
+            article#header2, article#header2-a{
+                    height: 230px;
+            }
+            .padd-10 {
+            padding: 0px 10px;
+         }
+         .ab-right {
+            position: absolute;
+            right: 15%;
+         }
+         div#columns{
+            columns: 2;
+            height: 217px;
+            border-right:rgb(34, 34, 34)
+         }
+         .bord{
+            border-right: thin solid rgb(51, 51, 51);
+         }
+             li[class="inline"]::before   {
+               content: "•";
+               color: black;
+               font-size: 15px;
+               padding-left: 1px;
+
+            }
+            aside#important {
+                width: 300px;
+            }
+         /*T I P O S - D E - A S S U N T O S*/
+            nav > span[id]{
+                display: inline-block;
+                padding:0px 2vw;
+            }
+            #arte {
+                border-top: 06px solid #999933;
+                background-color:#9999331f;
+            }
+            #biografias {
+                border-top:  06px solid #669933;
+                background-color:#6699332c;
+            }
+            #ciencia {
+                border-top: 06px solid #339933;
+                background-color:#3399332c;
+            }
+            #filosofia {
+                border-top: 06px solid #339999;
+                background-color:#3399992c;
+            }
+            #geografia {
+                border-top: 06px solid #336699;
+                background-color:#33669936;
+            }
+            #historia {
+                border-top: 06px solid #333399;
+                background-color:#33339933;
+            }
+            #matematica {
+                border-top: 06px solid #993399;
+                background-color:#99339931;
+            }
+            #sociedade {
+                border-top: 06px solid #993366;
+                background-color:#99336634;
+            }
+            #tecnologia {
+                border-top: 6px solid #993333;
+                background-color:#99333328;
+            }
+            
+            nav#tipos{ /*a p a g a r*/
+                background-color: rgba(71, 71, 71, 0.062);
+                word-spacing: -2px;
+                padding: 10px 0px;
+                text-align: center;
+                border-top: thin solid rgba(56, 56, 56, 0.466);
+                border-bottom: 1px solid rgba(56, 56, 56, 0.466)
+            }    
+            /*S E C A O  1*/
+            .paddin-hor {
+                padding: 15px 0px;
+            }
+            .para-p{
+                font-size: 17px;
+                color: rgba(0, 0, 0, 0.795);
+                font-family: sans-serif;
+            }
+            .para-h1 {
+                color: grey;
+                font-size: 28px;
+                text-indent: 40px;
+                padding: 20px 0px;
+                font-weight: lighter;
+            }
+            .space {
+                padding: 0px 30%;
+            }
+            blockquote {
+                text-align: center;
+                color: #414141da;
+                font-size: 14px;
+            }
+            .break {
+                word-break: normal;
+            }
+           
+            .border {
+                border: thin solid black;
+            }
+            #artigo1imagem{ 
+                width: 200px;
+                float: right;
+                
+            }
+            div.clearfix {
+                overflow: auto;
+            }
+            article b{
+                color:blue;
+                font-weight: lighter;
+            }
+            article#outros-assuntos > h2, article#outros-assuntos > h3 {
+                font-variant: small-caps;
+                color: blue;
+            }
+            article strong {
+                color: blue;
+                font-weight: lighter;
+            }
+            article#article2, article#article2 > aside {
+                color: #333399;
+            }
+            article#outros-assuntos2 > div >  p::before{
+                content: "...";
+            }
+            article#outros-assuntos2 > div >  aside {
+                color:blue
+            }
+            /* P R O J E T O - I R M A O S*/
+            article#projeto-irmaos > div > ul > li img   {
+                float: left;
+                width: 35px; height: 35px;
+            }
+            article#projeto-irmaos  > img {
+                position: relative;
+                left: 38vw;
+            }
+            #p2-projeto-irmaos, article#projeto-irmaos > blockquote {
+                text-align: center;
+                
+            }
+            #p-projeto-irmaos {
+             text-align: center;
+             padding-bottom: 30px;
+
+            }
+            #projeto-irmaos > div, p#p-projeto-irmaos , #p2-projeto-irmaos{
+                background-color: rgba(206, 206, 206, 0.322);
+            }
+            
+            article#projeto-irmaos > div > ul > li {
+                color: #3366CF;
+                font-size: 14px;
+                list-style-type: none
+            }
+        
+            article#projeto-irmaos > div > ul {
+                padding: 0px 10vw ;
+            }
+
+            blockquote {
+                text-align: left;
+                padding: 10px 0px;
+            }
+
+
+        /*F O O T E R*/
+            #-linguas{
+                position: absolute;
+                right: 15%;
+                bottom: 10%;
+                transform: translate(50, 50);
+            }
+            
+        /*V A R I A V E I S*/
+
+        /*M E D I A  Q U E U E S*/
+        @media screen and (max-width: 728px) {
+            aside#asideopcoes {
+                width: 65px;
+            }
+        }
+        @media screen and (max-width: 640px) {
+            aside#asideopcoes {
+                width: 200px;
+                top: 10%;
+            }
+        }
+        @media screen and (max-width: 550px){
+            section[class~="padd-10"] {
+                display: none;
+            }
+            }
+        
+        @media screen and (max-width: 480px) {
+            aside#asideopcoes {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 326px) {
+            header {
+                display: none
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span id="menu"><nav></nav><img src="image/menu.png" alt="menu clique aqui!!"></nav>
+                <img src="image/wikipedia.png" style="width: 50px; height: 50px" alt="Logo da wiki"></span>
+            <span id="logo">
+            </span>
+                <span class="inline">
+                    <h1>Winkipedia</h1>
+                    <p>A enciclopedia livre</p>
+                </span>
+                <div class="inline" id="Pesquise">🔍<input type="text"></div>
+            <span id="pesquiseaqui" class="inline">
+                <p> Pesquise Aqui</p>
+            </span>
+            <aside id="asideopcoes"><p class="inline"><a href="#">Criar uma conta</a></p>
+            <span class="inline" id="opções"><a href="#"><img src="image/opcoes.png" alt="Clique e veja as opções"></a></span></aside>
+                </header>
+            <iframe style="margin: auto; width:80vw; height: 200px; display: block;"  src="" frameborder="1"></iframe>
+            <main>
+        <nav> <!--H E A D E R 2-->
+            <section id="header2" class="inline padd-10">
+                <ul>
+                    <li class="inline"> <a href="x"><strong class="pagina-principal">Pagina principal</strong></a> </li>
+                    <li class="inline" > <a href="x"> Discussão</a></li>
+                </ul>
+            </section>
+            <section class="inline ab-right padd-10">
+                <ul>
+                    <li class="inline"> <a href="x"><strong class="pagina-principal">Ler</strong></a></li>
+                    <li class="inline"> <a href="x">Ver fonte</a></li>
+                    <li class="inline"> <a href="x">Ver historico</a></li>
+                </ul>  </nav>
+            </section>
+            <hr><br>
+            <div id="columns">
+                <article id="header2" class="bord">
+                    <h1>Boas-vindas á Wikipédia,</h1>
+                       <p id="p-header2"> A <b>enciclopedia</b> <abbr title="Conteúdo livre ou informação livre é qualquer tipo de trabalho funcional, obras de arte, outro conteúdo criativo que satisfaça a definição de um trabalho cultural livre.[1] A obra cultural livre é aquele que não tem significativa restrição legal sobre a liberdade do povo">livre</abbr>
+                         que todos podem <a href="https://pt.wikipedia.org/wiki/Ajuda:Tutorial/Edi%C3%A7%C3%A3o">editar</a></p></article>
+                    <article id="header2-a">
+                        <p><strong style="color: black;">1 096 094</strong> <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Artigo">artigos</a> em <a href="https://pt.wikipedia.org/wiki/L%C3%ADngua_portuguesa">portugues</a></p>
+                         <p style="text-align: center;"><strong style="color: black;">8 403</strong><a href="#"> editores ativos</a></p>
+                    <aside id="important">
+                        <ul >
+                        <li class="inline" ><a href="x">Ajuda</a></li>
+                        <li class="inline"><a href="x">Indice</a></li>
+                        <li class="inline"><a href="x">Perguntas</a></li>
+                        <li class="inline"><a href="x">Politicas </a></li>
+                        <li class="inline"><a href="x">Portais </a></li>
+                    </ul>
+                </aside>
+                    </article>  </div>
+            <nav id="tipos">
+                <span id="arte">
+                    <ul><a href="#">Arte</a></ul>
+                </span>
+                <span id="biografias">
+                    <ul><a href="#">Biografias</a></ul>
+                </span>
+                <span id="ciencia">
+                    <ul><a href="#">Ciencia</a></ul>
+                </span>
+                <span id="filosofia">
+                    <ul><a href="#">Filosofia</a></ul>
+                </span>
+                <span id="geografia">
+                    <ul><a href="#">Geografia</a></ul>
+                </span>
+                <span id="historia">
+                    <ul><a href="#">HIstoria</a></ul>
+                </span>
+                <span id="tecnologia">
+                    <ul><a href="#">Tecnologia</a></ul>
+                </span>
+            </nav>
+            <section id="principal">
+                <article id="artigos-em-destaque"><h1 class="para-h1">Artigos em Destaque</h1>
+                    <hr>
+                     <div class="clearfix break width">
+                        <img id="artigo1imagem" src="image/artigo1.png" alt="">
+                            <p class="para-p">O <b>rio Doce </b>é um curso de água da <b>Região Sudeste</b> do<b> Brasil</b>, que banha os estados de <b>Minas Gerais</b> e <b>Espírito Santo</b>. Origina-se na <b>confluência</b> dos rios <b>Piranga</b> e <b>do Carmo</b> entre os municípios de <b>Ponte Nova, Rio Doce</b> e <b>Santa Cruz do Escalvado</b>, em Minas Gerais. Contudo, seu curso principal se inicia com a nascente do <b>rio Xopotó</b>, afluente do rio Piranga, em <b>Desterro do Melo</b>.</p></div>
+                    <p class="break para-p">A partir do encontro dos rios Piranga e do Carmo, o manancial percorre 853 km até a <b>foz</b> no <b>oceano Atlântico</b>, banhando 38 municípios. O encontro com o mar forma um <b>estuário</b> que está localizado na altura do povoado de <b>Regência Augusta</b>, integrante do município de <b>Linhares</b>, no litoral do Espírito Santo. A <b>bacia do rio Doce </b>abrange 86 mil km² de <b>área de drenagem</b> e quase 230 municípios, com uma população de mais de 3,6 milhões de habitantes, correspondendo à bacia mais importante totalmente inserida na Região Sudeste do Brasil. Foi descrito pela primeira vez pelos <b>colonizadores europeus</b> por <b>André Gonçalves</b> em 1501. Contudo, núcleos urbanos se consolidaram nas margens do curso hídrico somente no século XX, com a construção da <b>Estrada de Ferro Vitória a Minas.</b> <a href="#">(leia mais...)</a></p>
+                <aside style="padding:30px 0px"><span style="float: left; padding: 0px 20px;">
+                    Compartilhe <img style="width: 15px; height: 15px;" src="image/facebook.ico" alt="Logo facebook"> <img style="width: 15px; height: 15px;" src="image/twitter.ico" alt="Logo do Twitter">
+                </span>
+                <ul style="padding: 0px 20px; color:rgba(0, 0, 255, 0.705); font-weight:bold; float:right;" class="inline">
+                        <li class="inline">Artigos destacados: 1342</li>
+                        <li class="inline">Artigos Bons: 1769</li>
+                    </ul>
+                </aside>
+                </article> 
+                <article class="overflow" id="eventosatuais"><h1 class="para-h1">Eventos atuais</h1>
+                    <img style="float:right;width: 120px; height: 100px;    "src="image/Istiklal_Street.jpg" alt="Imagem Ilustrativa">
+                    <ul class="para-p">
+                        <li ><strong>Atentado</strong> na Avenida İstiklal (imagem), em Istambul, Turquia, mata pelo menos oito pessoas e deixa outras 81 feridas.</li>
+                        <li>França encerra <strong>operação militar</strong> contra insurgentes islâmicos em Sahel.</li>
+                        <li><strong>Gal Costa</strong>, cantora brasileira, morre aos 77 anos.</li>
+                        <li>Motociclista italiano, Francesco Bagnaia, vence <strorng>campeonato mundial</strorng> do MotoGP.</li>
+                        <li>Voo Precision Air 494 cai no Lago Vitória, Tanzânia, deixando 19 mortos e 24 feridos.</li>
+                        <li><strong>Tentativa de assassinato</strong> de Imran Khan, ex-primeiro-ministro do Paquistão, resulta na morte de uma pessoa e deixa outras nove feridas.</li>
+                    </ul><article id="article2">
+                        <hr>
+                        <p class="paddin-hor"><strong>Eventos a decorrer</strong>: Invasão da Ucrânia pela Rússia • Pandemia de COVID-19</p>
+                        <hr>
+                        <p class="paddin-hor"><strong>Mortes recentes</strong>: Mehran Karimi Nasseri • Keith Levene • Sven-Bertil Taube • Luigi Bartesaghi • Nik Turner • Juan Carlos Orellana • Kevin Conroy</p>
+                        <hr>
+                        <aside class="paddin-hor" style="font-weight:bold;"><ul style="float: right;">
+                            <li class="inline">Mais eventos atuais</li>
+                            <li class="inline"> Sugestoes</li>
+                        </ul></aside>
+                    </article>
+                </article>
+                <br>
+                <article id="outros-assuntos"><h1 class="para-h1" > 14 de Novembro na Historia</h1>
+                <hr>
+                <h2 style="color: blue; padding-bottom: 12px">Dia Mundial das diabetes<span style="font-weight:lighter;"> (1991)</span> </h2>
+                    <ul style="line-height: 24px">
+                    <li><b>1889</b> – A <b>jornalista</b> <strong>Nellie Bly</strong> inicia sua bem-sucedida viagem de <b>circunavegação</b>, que viria a ser descrita no <b>livro A Volta ao Mundo em 72 Dias.</b></li>
+                    <li><b>1985</b> – A <b>erupção</b> vulcânica do <b>Nevado del Ruiz</b>, nos <b>Andes</b>, <a href="#">soterra</a> a <b>cidade</b> de <b>Armero</b>, na <b>Colômbia</b>.</li>
+                    <li><b>2003</b> – É descoberto o <b>planetóide</b> <strong>Sedna</strong>.</li>
+                        </ul>
+<h3 class="padding-ver"  style="color: black">Nasceram neste dia…</h3>
+<p style="color: blue">Júlio Dinis (1839–1871)  • Claude Monet (1840–1926)  • Carlos III do Reino Unido (imagem) (n. 1948)</p>
+<h3 class="padding-ver" style="color: black">Morreram neste dia…</h3>
+<p style="color: blue; padding-bottom: 30px">Justiniano I (483–565)  • Gottfried Wilhelm Leibniz (1646–1716)  • D. Isabel, Princesa Imperial do Brasil (1846–1921)</p>
+
+<aside style="float: right"><a href="#">Ver mais</a> <span style="font-weight: bold">•   dias:</span> <a href="">12 • 13 • 14 • 15 • 16 • Ver todos</a></aside>
+</article> 
+<br>
+<hr>
+<article id="outros-assuntos2"> <h1 class="para-h1"> Sabia que..</h1>
+    <img style="float: right" src="image/artigo-2.png" alt="atomos">
+    <p style="padding-bottom: 5px">os <b>rins</b> e <b>intestinos</b> dos <a href="#">camelos</a> são tão eficientes na absorção de <b>água</b> que sua <b>urina</b> é espessa como um xarope e suas <b>fezes</b> são tão secas que podem ser utilizadas para atear <b>fogo</b>?</p>
+    <p style="padding-bottom: 5px">há uma <b>lenda urbana</b> na qual a <b>água</b> (imagem) é chamada de <strong>monóxido de di-hidrogênio</strong>, nome derivado de sua fórmula H2O, para parecer ser uma substância perigosa?</p>
+    <p style="padding-bottom: 5px">o <b>imperador romano Adriano</b>, após a morte do seu provável <b>amante Antínoo</b>, trinta e quatro anos mais novo, <b>transformou-o</b> em um deus e fundou uma <b>cidade</b> em sua homenagem?</p>
+    <p style="padding-bottom: 5px">os <a href="#">rios atmosféricos</a> da <b>América do Sul</b> apresentam <b>vazão</b> equivalente à dos rios da <b>bacia amazônica?</b></p>
+    <p style="padding-bottom: 5px">o <strong>chocolate</strong> se origina do <b>xocolātl</b>, uma bebida amarga consumida pelas elites <b>maias</b> e <b>astecas</b>?</p>
+<aside style="float: right;">Índice geral • Sugestões</aside>
+</article>           
+<article id="assuntos-do-dia"><h1 class="align para-h1"> Imagem do dia</h1>
+    <figure>
+        <img style="width: 75vw;" src="image/imagem-do-dia.png" alt="nao sei que lugar é este">
+        <figcaption>Vista inferior do ivã da entrada principal ao santuário de Fátima bint Musa, Qom, Irã. O mausoléu data do início do século XVII nos tempos do xá Abás, o Grande. Qom é um lugar de peregrinação muito concorrido e é considerado pelo xiismo a segunda cidade mais sagrada depois de Mexede.</p>
+        <blockquote>(resolução original: 7 615 × 5 013)</blockquote>
+        </figcaption>
+</figure>
+<aside style="padding-bottom: 20px">
+    <span style="float: left; padding-left: 20px">
+    <strong style="color: black;">Compartilhe:</strong> <a href="#"><img style="width: 14px;" src="image/facebook.ico" alt="icone facebook"></a>
+                                              <a href="#"><img style="width: 14px" src="image/twitter.ico" alt="icone twitter"></a>
+</span class="padding-ver"> 
+    <ul  style="color: blue; float: right; padding-right: 20px">
+        <li class="inline">Indice Geral</li>
+        <li class="inline">Commons</li>
+    </ul>
+</aside>
+     </article>
+<article id="sobre-a-wiki"> <h1 class="para-h1"> Sobre a Wikipedia</h1>
+    <img style="float: right; width: 120px;" src="image/logo-da-wiki2.svg" alt="logo da wiki 2">
+    <p style="line-height: 20px">A <b>Wikipédia</b> é um projeto de enciclopédia colaborativa, universal e multilíngue estabelecido na internet sob o princípio <b>wiki</b>. Tem como propósito fornecer um conteúdo livre, objetivo e verificável, que todos possam editar e melhorar. O projeto é definido pelos <b>princípios fundadores</b> e o conteúdo é disponibilizado sob a licença <b>Creative Commons BY-SA</b> e pode ser <b>reutilizado sob a mesma licença</b>, desde que respeitando os <b>termos de uso</b>. Todos podem publicar conteúdo on-line desde que criem uma conta e sigam as regras básicas, como <b>verificabilidade</b> ou <b>notoriedade</b>.</p>
+    <br>
+    <p style="line-height: 20px;">Todos os editores da Wikipédia são voluntários e integram uma comunidade colaborativa, sem um líder, onde coordenam esforços em <b>projetos temáticos</b> e <b>espaços de discussão</b>. Dentre as várias <b>páginas de ajuda</b> à disposição, estão as que explicam como <b>criar um artigo</b> ou <b>editar um artigo</b>. Em caso de dúvidas, não hesite em <b>perguntar</b>. Debates e comentários sobre os artigos são bem-vindos. As <b>páginas de discussão</b> servem para centralizar reflexões e avaliações sobre como melhorar o conteúdo da Wikipédia.</p>
+
+    <aside style="float: right; color:blue; font-weight: lighter;">
+        <ul>
+            <li class="inline">Portal comunitario</li>
+            <li class="inline">O essencial</li>
+        </ul>
+    </aside>
+</article>
+<br>
+<article id="projeto-irmaos">
+    <h1  class="para-h1">Projeto irmãos</h1>
+    <hr>
+        <p id="p-projeto-irmaos" class="padding-hor para-p">
+            A Wikipédia existe graças à <b>Fundação Wikimedia</b>, entidade sem fins lucrativos que gere<b> projetos </b>em diversos idiomas e de <b>conteúdo livre</b>:
+        </p>
+        <div style="columns: 2">
+          
+        <ul>
+            <li><img src="image/1.svg" alt=""> 
+                Commons</li>
+            <blockquote>Repositório de mídia livre</blockquote>
+              
+            <li><img src="image/2.svg" alt=""> 
+                Incubator</li>
+            <blockquote>Incubadora de projetos</blockquote>
+              
+            <li> <img src="image/3.svg" alt="">
+                Meta-Wiki</li>
+            <blockquote>Projeto de coordenação </blockquote>
+              
+            <li>  <img src="image/4.svg" alt="">
+                Wikcionário</li>
+            <blockquote>Dicionário universal livre</blockquote>
+              
+            <li> <img src="image/5.svg" alt="">
+                Wikidata</li>
+            <blockquote>Base de conhecimentos livre</blockquote>
+              
+            <li> <img src="image/6.svg" alt="">
+                Wikilivros</li>
+            <blockquote>Livros e manuais livres</blockquote>
+            <li>  <img src="image/7.svg" alt="">Wikinotícias</li>
+            <blockquote>Jornalismo colaborativo</blockquote>
+        </ul>
+          <ul>
+              
+                      <li> <img src="image/8.svg" alt="">
+                         Wikiquote</li>
+                      <blockquote>Coletânea de citações livre</blockquote>
+              
+                      <li> <img src="image/9.svg" alt="">
+                           Wikisource</li>
+                      <blockquote>Biblioteca livre</blockquote>
+              
+                      <li> <img src="image/10.svg" alt="">
+                        Wikispecies</li>
+                      <blockquote>Diretório de espécies livre</blockquote>
+              
+                      <li> <img src="image/11.svg" alt="">
+                        Wikiversidade</li>
+                      <blockquote>Universidade livre</blockquote>
+              
+                      <li> <img src="image/12.svg" alt="">
+                        Wikivoyage</li>
+                      <blockquote>Guia livre de viagem</blockquote>
+                      
+                      <li><img src="image/13.svg" alt="">
+                        MediaWiki</li>
+                      <blockquote>Software Wiki</blockquote>
+
+                      <li> <img src="image/14.svg" alt="">
+                        WikiTech</li>
+                       <blockquote>Projetos técnicos</blockquote>
+                      
+          </ul></div>
+
+           <div id="p2-projeto-irmaos">
+               <img style="  width: 35px; height: 35px;" src="image/15.svg" alt="">  Wikispore
+                         <blockquote style="text-align:center;">Projetos experimentais</blockquote>
+           </div>
+           <ul style="float: right">
+            <li class="inline">Imprensa</li>     <li class="inline">Estatísticas</li>           
+            </ul>
+
+</article>
+</section>
+<p id="-linguas" style="float: right">
+    <img  src="image/ling.ico" alt="linguagens" >324 linguas</p>
+<footer class="padding-ver">
+<p style="font-size: 12px;"class="para-p">Esta página foi editada pela última vez às 16h06min de 19 de julho de 2022.</p>
+<br>
+<p style="font-size: 12px;" class="para-p">Este texto é disponibilizado nos termos da licença Atribuição-CompartilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0) da Creative Commons; pode estar sujeito a condições adicionais. Para mais detalhes, consulte as condições de utilização.</p>
+<aside id="aside-footer" class="padding-ver blue">
+    <ul>
+        <li class="inline">Política de privacidade</li>
+        <li class="inline">Sobre a Wikipédia</li>
+        <li class="inline">Avisos gerais</li>
+        <li class="inline">Versão móvel</li>
+        <li class="inline">Programadores</li>
+        <li class="inline">Estatísticas</li>
+        <li class="inline">Declaração sobre ''cookies'</li>
+    </ul>
+</aside>
+<div style="float: right">
+    <img style="width: 20px; height: 20px" class="inline" src="image/wikimedia-button-2x.png" alt="aaa">
+    <img style="width: 20px; height: 20px" class="inline" src="image/poweredby_mediawiki_176x62.png" alt="aa">
+</div>
+</footer>
+     </main>           
+    </body>
+</html>
+

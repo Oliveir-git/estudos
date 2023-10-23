@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/pagstyle.css">
+    <title>CSS/HTML</title>
+</head>
+<!--AQUI ABORDAREMOS OS PARAGRAFOS HOME, INTRODUCTION, SYNTAX DA CSS E SELECTORS -->
+<body>
+    <h1> Hello World</h1>
+    <h2> INTRODUÇÃO CSS </h2>
+    <p>
+        Ao falarmos de css, estamos dizendo sobre <strong>Cascading styles sheets</strong> <span class="parenteses">(Folhas de estilos em cascatas)</span>
+        Ou seja, todo estilo que aplicarmos a CSS sera redirecionado ao referido HTML como por exemplo 
+        diz que o html selecionado ira mudar de cor para "preto" ou até mesmo o tipo de fonte como <span class="code">font-family="sanserif"</span>;que mudaria a fonte para sem serifa
+        <br>
+        Feito especialmente para suprir a necessidade da tag <span class="code">&lt;font&gt;</span> onde os desenvolvedores ficam perdidos em edições em sites maiores.
+        
+        Com a CSS podemos separar arquivos especificios com formatos pre selecionados para que o HTML se adapte.
+        Como por exemplo esta formatação onde demos estilo ao p <span class="parenteses">(paragrafo)</span>
+        <br>
+        <span class="code">
+            &lt;style&gt;<br>
+            p {<br>
+            color: white;<br>
+            background-color: black;<br>
+            font-family: "Arial, Consolas, sanserif"<br>
+                } <br>
+            &lt;/style&gt;<br>
+        
+        </span>
+            <u>Resultado</u>
+            <div class="azul">
+                <div class="xis">X</div>
+                <div class="image">
+                    <img src="../imagens/testes/1.png" alt="AMOSTRA DE CSS">
+                </div>
+            </div>
+    </p>
+
+     <h2>Afinal como funciona?? <span class="parenteses">(Sintax)</span></h2>
+       
+     <div class="azul">
+     <div class="xis">X</div>
+         <div class="image">
+             <img style="height: 150px;"" src="../imagens/testes/css-syntax.png" alt="SYNTAX DO CSS">
+             
+         </div>
+     
+    </div>
+     <p style="text-indent: 0;">
+        <strong>Selector</strong> Aqui é onde colocamos qual tag iremos dar estilo, como no exemplo acima, estamos selecionando o h1 para darmos inicio ao CSS.
+        <br>
+        <strong>Declaration</strong> Uma declaração é feita com dois elementos, a <strong>property</strong><span class="parenteses">(Proriedade)</span> onde colocamos o que iremos mudar no elemento, como a color, backgorund-image <span class="parenteses">(imagem de fundo)</span>  ou a font-family <span class="parenteses">(estilo da letra  )</span>
+        e em seguida temos o <strong>value</strong> <span class="parenteses">(valor)</span> onde adicionamos qual cor, ou qual o tamanho, ou qual o tipo de letra que iremos mudar.
+    
+    </p>
+
+       
+    <h1>
+        CSS Selector <span class="parenteses">seletores</span>
+    </h1>
+    <p>
+        Seletores de CSS pode indicar qual elemento do html queremos estilizar... Podemos citar alguns exemplos.
+    </p>
+        <h2>
+            Element Selector
+        </h2>
+        <p>
+            <strong>Seletores de Elementos</strong>, podemos indicar o elemento <span class="parenteses">(h1, p, div, span, body, hmtl etc...)</span>
+            sao uteis pois assim como os demais, podemos indicar mais de um seletor chamados de <strong>Group Selecetors</strong> como por exemplo. <br>
+            <span class="code">
+                &lt;style&gt; <br>
+                    h1, h2, p, body { <br>
+                        font-family = "Arial, sanserif" <br>
+                    } <br>
+                &lt;/style&gt; 
+            </span>
+            <br>
+            Isto, muda os elementos h1,h2,p,body deixando todos com o estilo Arial como fonte.
+        </p>
+        <h2>
+            ID and Class Selector
+        </h2>
+        <p>
+            Muito uteis e mais utilizadas, pois com id's <span class="parenteses">(#)</span> e classes <span class="parenteses">(.)</span>
+            permite ao css que estilize, somente os elementos que contenham a classe ou id criados. <br>
+            Podemos criar estes curiosos amigos de varias formas, e a good pratice é sempre nomea-los de acordo com sua função como por exemplo <br>
+            <span class="code">
+                &lt;style&gt;<br>
+                .cor { <br>
+                    color:white; backgorund-color:"black" <br>
+                } <br>
+                &lt;/style&gt; 
+            </span> <br>
+            O segredo é sempre atribuilos de acordo com suas funções para que o codigo fique limpo e legivei <br>
+            a diferença entre Id's e classes, é que <strong>ID</strong> nao pode utilizar em mais de um elemento, ficaria exclusivo para um unico uso, enquanto <strong>class</strong> sao utilizados sem limite de uso em elementos <br>
+            Ou seja, Ids sao utilizados para uma formatação espeficica em um unico elemento, como o main ou o proprio html
+            <br> <span class="parenteses">(OBS = CLASSES NAO PODEM INICIAR COM NUMEROS EM SEUS NOMES)</span>
+        </p>
+        <h2>
+            Universal Selector <span class="parenteses">(*)</span>
+        </h2>
+        <p>
+            Indicado apenas por <strong>*</strong> mas uma poderosa ferramenta onde as formatações nele sao aplicadas para todos os elementos <br>
+            por exemplo. <br>
+
+            <span class="code">
+                &lt;style&gt; <br> 
+                * { <br>
+                    padding: 0 ; margin: 0; <br>
+                } <br> 
+                &lt;/style&gt; 
+            </span> <br>
+            Mudaria todo elemento, independente de qual seja p,html,body,div,span todos vao ter padding 0px e margin 0px.
+        </p>
+
+        <!--A CLASS DE UM CSS NAO PODE COMEÇAR COM UM NUMERO
+        GROUP SELECTORS-->
+    
+            <!--External, internal , inline css
+            ordens hierarquicas 
+            Inline style (inside an HTML element)
+            External and internal style sheets (in the head section)
+            Browser default
+        
+        -->
+
+        <h1>Ordens Hierarquicas</h1>
+        <ol>
+            <li>
+                <strong>Inline Style</strong>
+                O jeito comum e rapido de inserir CSS, é no proprio elemento que pretende dar estilo.. <br>
+                Um exemplo de como mudar a cor de um paragrafo no estilo inline <br>
+                <div class="azul">
+                    <div class="xis">X</div>
+                    <div class="image">
+                        <span class="code" style="background-color: rgba(0, 0, 0, 0.178);">
+                            <span style="color:black">&lt;p style="color: blue"&gt;</span> <br>
+                                <span style="color:blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum optio dolores nulla consequatur, numquam cupiditate facere quibusdam officiis hic odit autem exercitationem, aspernatur similique quaerat amet magni veniam. Maiores!</span><span style="color:black">&lt;/p&gt;</span>
+                        </span>
+                    </div>
+                </div></li>
+            <li>
+                <strong>External Style / Internal Style</strong>
+                Preferivel para sites maiores,
+                diferente do inline, no external juntamos todos os estilos css selecionados por elementos, ids, class e tudo que vimos a cima. <br>
+                É adicionado ainda na area &lt;head&gt; representado da seguinte forma, <span class="code">
+                    &lt;link rel="stylesheet" href="/style.css"&gt; 
+                </span> <br>
+                Onde /style.css é o nome que criamos ao arquivo e onde iremos juntar todo o CSS do site <br>
+                Internal Style tambem é o metodo semelhante onde ao inves de colocarmos em arquivo, deixamos logo abaixo da area head com as tags 
+                <span class="code">
+                    &lt;style&gt; <br>
+                    h1 { padding: 0; margin;0 ; color: blue;} <br>
+                    &lt;/style&gt; 
+                </span></li>
+            <li>
+        
+                <strong>Browser default ou User agent</strong>
+                É o que costumamos ver ao explorar um site onde certa area nao foi modificada por seu criador. <br>
+                Cada navagedor, cria regras pre definidas para estes casos, como um padding ja adicionado em areas onde o usuario tem dificuldade em enxergar, ou uma font-family caso o criador nao espeficique uma.
+            </li>
+            <p>
+                E cada uma delas, são conjuntos hierarquicos onde se entrarem em conflito como por exemplo, um estilo internal vs external onde ambos mudam a cor do h1 quem ira prevalecer?
+            ... Bom caso isso aconteça, a ordem é a seguinte.
+            </p>
+            <ol>
+                <li>
+                    Inline style (Dentro do elemento)
+                </li>
+                <li>
+                    External and internal style sheets (Na seção Head)
+                </li>
+                <li>Browser default (User Agents)</li>
+            </ol>
+        </ol>
+
+        <!---
+        COLORS
+        BACKGROUNDS
+        BORDERS
+        MARGIN / PADDING
+        HEIGHT / WIDTH
+        BOX MODEL
+        -->
+
+       
+        <h1>COLORS</h1>
+        <p>
+            Cores são exenciais no estilo de seu website <br>
+            Podemos estilizar as cores com um simples comando. 
+            <span class="code"> 
+                &lt;style&gt; <br>
+                h1 {color : black;} <br>
+
+                &lt;/style&gt;
+            </span> <br>
+            Com a adiçao do atributo mais simples <span class="code">color</span> fazemos com que a cor mude para o formato que quisermos, seja RGB HSB ou em hexadecimal.
+    
+        </p>
+
+        <h1>
+            <!--background-color
+            background-image
+            background-repeat
+            background-attachment
+            background-position
+            background (shorthand property)-->
+            BACKGROUNDSS
+        </h1>
+            <ul>
+                <li><strong>backgorund-color</strong>
+                    Funciona da mesma forma que estilizar um texto, sempre indicando um elemento <span class="parenteses">
+                        (h1, p, div, span ... etc)
+                    </span>
+                    onde funcioanara como uma box, e nela damos o seguinte codigo <span class="code">
+                        h1 { background-color: blue}
+                    </span> <br>
+                    Resultando... <br>
+                    <div class="azul">
+                        <div class="xis">X</div>
+                        <div class="image">
+                            <img src="../imagens/testes/background-color.png" alt="Imagem do resultado para background-color">
+                        </div>
+                    </div>
+                </li>
+                <li><strong>background-image</strong>
+                Outra forma de estilizar o fundo do site, é com o parametro <span class="code">
+                    div {background-image: url(destino)};
+                </span>
+                onde podemos adicionar qualquer imagem que tenhamos como background, altamente recomendavel
+
+                </li>
+                <li><strong>background-repeat</strong>
+                Por padrão, uma imagem que ultrapassa a resolução da imagem com sua medida se repete até preencher todo o fundo sem que dimnua sua qualidade. <br>
+                Podemos mudar isto, e ainda alterar alguns atributos. <br>
+                <span class="code">
+                    <strong>background-repeat</strong>: no-repeat - retira totalmente a repetição da imagem, normalmente temos que corrigir a dimensao da imagem por conta disto <br>
+                    <strong>background-repeat</strong>: repeat-y <span class="parenteses">(horizontal)</span>- <br>
+                    <strong>background-repeat</strong>: repeat-x <span class="parenteses">(vertical)</span>
+                </span>  <br>
+                
+                </li>
+                <li><strong>background-attachment</strong>
+                Ligaçao de background - especifica se o fundo ira ficar <strong>fixed</strong> <span class="parenteses">
+                    (colado no fundo da pagina)
+                </span>
+                ou <strong>scroll</strong> <span class="parenteses">
+                    rolando junto conforme abaixamos a roda do mouse
+                </span>
+                </li>
+                <li><strong>background-position</strong>
+                    Definindo a centrialização da imagem onde podemos colocar os valores = <strong> 
+                        top, bottom, left,
+                    </strong>
+                onde pode ser inserido ate 2 valores, dizendo por exemplo se o fundo fica 
+                <span class="code">
+                    h1 {background-position: center center}
+                </span>
+                ou uma imagem centrializada para baixo e a esquerda do layout:
+                <span class="code">
+                    h1 {background-position: left bottom}
+                </span>
+                <div id="test-background-position">
+                    <div class="azul">
+                        <div class="xis">X</div>
+                        <div class="image">
+
+                            <img src="../imagens/testes/background-position-center-center.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="azul">
+                        <div class="xis">X</div>
+                        <div class="image">
+
+                            <img src="../imagens/testes/background-position-left-bottom.png" alt="teste de background-position">
+        
+                        </div>
+
+                    </div>
+                
+            
+                </div>
+            </li>
+                <li><strong>background</strong> <span class="parenteses">(shorthand property)</span></li>
+            Segue a shorthand para uma estilizada mais rapida. <br>
+            <div class="azul"  style="max-width: 300px">
+                <div class="xis">X</div>
+                <div class="image">
+                    <span class="code" style="color: black; text-align: left;">
+                        body { <br>
+                            <strong>background-color:</strong>#ffffff; <br>
+                            <strong>background-image:</strong>url("img_tree.png"); <br>
+                            <strong>background-repeat</strong> no-repeat; <br>
+                            <strong>background-position</strong>: right top;
+                          }
+                        </span>
+                </div>
+            </div>
+            </ul>    
+        <h1>BORDERS</h1>
+            <p>Alguns exemplos que podemos fazer com bordas em um elemento</p>
+        <p style="text-indent: 3px">
+            <span style="width:250px; border: 1px solid white">
+                 BORDAS EM TODO LUGAR</span>
+                 <span class="code">border: 1px solid white</span>
+        </p>
+        <p style="text-indent: 3px">
+            <span style="width:250px; border-bottom: 1px solid red;">
+                APENAS BORDA EM BAIXO</span> 
+                <span class="code"> 
+                    border-bottom: 1px solid red;
+                </span> <span class="parenteses">
+                    (borders podem ter até 4 valores para cada lado da borda
+                    bottom, top, left ou right)
+                </span>
+        </p>
+        <p style="text-indent: 3px">
+                <span style="width:350px; border:1px solid white; border-radius: 15px;">
+                PODEMOS ARREDONDAR AS BORDAS</span> 
+                <span class="code">
+                    border-radius: 15px;
+                </span>
+        </p>
+        <p style="text-indent: 3px">
+                <span style="color:black; width:250px; border-left: 10px solid blue; background-color: aliceblue;">
+                 SEJA CRIATIVO !!</span>
+                 <span class="code">
+                    border-left: 10px solid blue; background-color: aliceblue;"
+                 </span>
+        </p>
+        <h1>MARGIN / PADDING</h1>
+
+        <h1>HEIGHT / WIDTH</h1>
+
+        <h1>BOX MODEL</h1>
+
+
+        </body>
+
+</html>

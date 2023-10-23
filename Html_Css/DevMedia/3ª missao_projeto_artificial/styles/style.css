@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+    background-color: rgba(253, 253, 253, 0.548); 
+}
+div {
+    padding: 40px 200px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+h3 {
+    font-size: 20px;
+    padding-top: 10px
+}
+img {
+    width: 200px;
+}
+
+a {
+    background-color: rgba(23, 172, 23, 0.623); color: white;
+    padding: 10px 30px; border-radius: 20px;;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover {
+    background-color: green; 
+}
+p {
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}

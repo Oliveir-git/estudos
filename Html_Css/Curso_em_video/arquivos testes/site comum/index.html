@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <title> Teste para site comum</title>
+        <style>
+                :root{
+                    --color1:#000000;
+                    --color2: #330007;
+                    --color3: #260333;
+                    --color4: #032533;
+                }
+                    * {
+                        padding: 0px;
+                        margin:0px;
+                    }
+
+            body {
+                background-color: aqua;
+            }
+            header{
+                background-color: var(--color2);
+                border: thin solid white;
+                height: 20vh;
+
+            }
+            header > h1 {
+                text-align: center;
+                padding:20px 0px 18px 15px;
+                font-size: 3em;
+                font-variant: small-caps;
+                max-height: 85px;
+                color: white
+            }
+             nav{
+                background-color: black;
+                border: thin solid white;
+                width: 15vw;
+                height: 60vh;
+                line-height: 2em;
+                font-size: 2vw;
+            }
+              main {
+                background-color: var(--color3);
+                border: thin solid white;
+            }
+              div{
+                background-color: rgb(211, 5, 5);
+                border: thin solid white;
+                position: absolute;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+               span {
+                background-color: black;
+                border: thin solid rgb(255, 0, 0);
+            }
+            span > h1, p {
+                font-size: 1vw;
+                color: white;
+                padding: 0px 3px;
+            }
+               footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0%;
+                background-color: var(--color4);
+                border: thin solid white;
+                text-align: center;
+            }
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+            /*Pseudo Classes e Elementos*/
+            h1::after {
+                content: '!!';
+            }
+            /*ID's*/
+            #texto {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-20%, -55%);
+                width: 10vw;
+                height: 50vh;
+                overflow: scroll;
+            }
+            #imagem1{
+                top: 21vh;
+                left: 16vw;
+                width: 300px;
+                height: 300px
+            }
+            #imagem2{
+                top: 21vh;
+                right: 10vw;    
+                width: 300px;
+                height: 300px
+            }
+            #logo {
+                width: 100px;
+                height: 100px;
+            }
+            #logo img{
+                width:100%;
+                height: 100%
+            }
+
+         /*MEDIA QUEUES
+         @media screen and (min-width: 930px)  {
+        header{
+            height: 20vh
+        }
+            
+         }*/
+
+         @media screen and (max-width: 970px) {
+            div[id^="imagem"]  { /*Posição da imagem*/
+                position: static;
+                width: 80% !important;
+                padding: 20px
+            }
+            }
+            section {
+                height: 700px;
+            }
+            footer {
+                position: absolute;
+                bottom: 0px
+            }
+            #texto {
+                width: 50vw;
+                left: 33vw;
+            }
+            footer {
+                display: none;
+            }
+            footer:hover{
+                display: block;
+
+            }
+         
+         @media screen and (max-width: 800px) {
+            div#logo{
+                width: 80px;
+                height: 80px;
+            }
+            header h1 {
+                padding-left: 2em;
+            }
+         }
+         @media screen and (max-height: 400px) {
+            header {
+                font-size: 2vh;
+            }
+            footer {
+            display: none;
+         }
+        }
+         @media screen and (max-height: 465px) {
+            nav {
+                font-size: 5vh;
+
+            }
+         }
+         @media screen and (max-height: 200px) {
+            header, nav {
+                display: none;
+            }      
+         }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="imagens/logo.png" alt="logo tirado do pinterest">
+            </div>
+            <h1>
+                Noticias Noticias Noticias
+                </h1>
+            </header>
+        <nav>
+            <span id="nav">
+                    <ul style="list-style-type: none;">
+                        <li><a href="#">Clique aqui</a></li>
+                        <li><a href="#">Clique aqui</a></li>
+                        <li><a href="#">Clique aqui</a></li>
+                        <li><a href="#">Clique aqui</a></li>
+                    </ul>
+                </span>
+        </nav>
+        <main>
+        <section>
+            <div id="imagem1">
+                <img src="imagens/imagem1.jpeg" alt="noticia 1">
+            </div>
+            <span id="texto">
+                <h1>
+                    Aqui temos algo em que eu nao quis criar um nome!!
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, architecto officia! Dolor omnis animi, architecto cupiditate, sint voluptates sit consectetur doloremque facilis mollitia optio, qui cum enim libero ratione voluptas?</p>
+            </span>
+            <div id="imagem2">
+                <img src="imagens/imagem2.jpeg" alt="noticia 2">
+            </div>
+        </section>
+    </main>
+    <footer>Made for <a href="https//github.io/Oliveir-git">Oliveir</a></footer>
+    </body>
+</html>

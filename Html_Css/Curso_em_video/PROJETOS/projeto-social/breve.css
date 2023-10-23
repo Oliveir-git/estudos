@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+/*font-family: 'Rubik Glitch', cursive;*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-scrollbar {
+     height: 0;
+}
+
+body {
+    overflow: visible;
+    background-image: radial-gradient(circle, #C9E7E7,white, #d491e5);
+    height: 100vh;
+}
+h1{
+text-shadow: 2px 2px 15px rgba(160, 14, 212, 0.637);
+text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-variant: small-caps;
+ font-family: 'Rubik Glitch';
+ font-size: 4em;
+ color: rgba(255, 255, 255, 0.637);
+}

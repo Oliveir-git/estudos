@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+h1, h2 {
+    text-align: center;
+}
+h2, h3 {
+    color: darkred;
+    
+}
+h2 {
+     font-weight: normal;
+}
+h3 {
+    text-decoration: underline;
+}
+p {
+    line-height: 58px;
+}
+img {
+    width: 100%;
+}
+ul > li {
+    display: inline;
+}
+li {
+    line-height: 28px;
+}

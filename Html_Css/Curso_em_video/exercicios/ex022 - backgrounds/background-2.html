@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background 2</title>
+
+    <style>
+div {
+  width: 90%;
+  height: 400px;
+  background-color: aliceblue;
+}
+
+#p1{ 
+  background-image: url(imagens/pattern001.png)
+}
+#p2{ background-image: url(imagens/pattern002.png); background-repeat: repeat-x
+}
+#p3{ background-image: url(imagens/pattern003.png); background-repeat: repeat-y;
+  }
+#p4{ background-image: url(imagens/pattern004.png); background-repeat: no-repeat;
+  } 
+    
+      </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal ( pradrão )
+    </p> <div id="p1"></div>
+  <h2>background-repeat: repeat-x</h2>
+  <div id="p2"> </div>
+  <h2>background-repeat: repeat-y;</h2>
+  <p> Repete apenas no eixo vertical.</p>
+  <div id="p3"></div>
+<h2>background-repeat: no-repeat;</h2>
+<div id="p4"></div>
+
+</body>
+</html>

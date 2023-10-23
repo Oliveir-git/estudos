@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/pagstyle.css">
+    <title>Curso Hml</title>
+</head>
+<body>
+ <h1> CAP 25 Media Queryes</h1>
+<p> Simplismente, adaptações para diferentes situações principalemente com a mudança de tela do usuario, pois temos Tablets, Computadores, notebooks, celulares como tamanhos referentes onde o site tem de ser resposivo. <br>
+Podemos retirar, movimentar, alterar ou até adicionar os elementos que nao se encaixam com a mudança de tela</p>
+<h1>Syntax</h1>
+ <p style="text-indent: 0;">
+    <span class="code">
+        &lt;style&gt; <br>
+        @media not|only mediatype and (expressions) { <br>
+            CSS-Code; <br>
+          } <br>
+          &lt;style&gt;
+    </span> <br>
+    
+ </p>
+
+ <h2>Faça em arquivos separados para MQ em sites mais extensos !!</h2>
+ <p>
+    Utilizando <span class="code">
+        &lt;link rel="stylesheet" href="estilos/tela ou impressora.css" media="screen ou print ou all"&gt;
+    </span>
+    <span>podemos dividir e organizar nossas pastas media queryes, onde com o atributo <strong>media</strong> indicamos formatações exclusivas para screen <span class="parenteses">(para telas)</span> print <span class="parenteses">(impressoras)</span> all <span class="parenteses">(padrao, para ambas)</span>
+ </p>
+ <h2>Media features e media types</h2> 
+<p>È como chamamos as medias features <span class="parenteses">(screen print and all)</span> e media types <span class="parenteses">(orientation: landscape ou portrait)</span>
+    representando a media type desta forma <span class="code">
+        media= "screen and (orientation: portrait ou landscape)"
+    </span>
+<h1>Mobile first</h1>
+<p>
+    Uma regra muito importante ao criarmos nossas <abbr title="Media queryes">MQ</abbr>, é a vantagem de se começar primeiro pelo tamanho mobile atualmente em <span class="parenteses">(320px — 480px.)</span>.
+    Alem de garantir maior acessibilidade ao seu site, pois começar com a menor resolução só teremos que tirar ou adicionar elementos que nao se encaixam ao tamanho.
+    <br>
+    <strong>Vantagens</strong> - Facilidade na divulgação do site, de acordo com o criador desta regra o google foca as pesquisas em sites Mobile First.
+    <strong>Melhoria na experiencia do usuario</strong> -  
+    Focar em Mobile first, faz com que foquemos em sites mais leves, o que favorece o acesso em locais com internet mais lenta. Alem de favorecer tambem na pesquisa do google novamente.
+    <br>
+</p>
+
+<h1>Device Breakpoints</h1>
+    <p> Mas afinal como sabemos as medidas oficiais de uma tela de celular, ou de tablet ou pc etc...?? <br>
+        O segredo é se atualizar !! pois os tamanhos sempre mudam e podemos pesquisar e nos atualizar procurando por <a href="https://www.google.com/search?client=opera-gx&q=Typical+device+breakpoints&sourceid=opera&ie=UTF-8&oe=UTF-8">Typical device breakpoints</a>
+    <br>
+    Hoje em 2023 a referencia é esta ...
+    <div class="azul" style="width: 400px;">
+        <div class="xis">X</div>
+        <div class="image"">
+            Mobile devices – 320px — 480px. <br>
+            iPads, Tablets – 481px — 768px. <br>
+            Small screens, laptops – 769px — 1024px. <br>
+            Desktops, large screens – 1025px — 1200px. <br>
+            Extra large screens, TV – 1201px, and more. 
+        </div>
+
+    </div>
+        <span class="parenteses">
+            MEDIA PRINT (PARA IMPRESSORAS) NAO FUNCIONA BACKGROUNDs
+        </span>
+    </p>
+ <!--MEDIA PRINT (PARA IMPRESSORAS) NAO FUNCIONA BACKGROUND's-->
+
+
+ <!--Menu Responsivo
+    google icons https://fonts.google.com/icons;
+
+-->
+</p>
+
+
+    <h1>
+        PRIMEIRO MENU RESPONSIVO
+    </h1>
+    <p>
+        Se liga no nosso primeiro menu responsivo !! 
+        <a target="_blank" href="../../../exercicios/ex026 - media queries/mq005/index.html"> VEJA !!</a>
+    </p>
+    <p>
+        Nele, utilizamos <strong>Dropdown</strong> e um pouquinho de <strong>Javascript</strong> para definir o que ira acontecer ao clicar no menu
+    Se liga !!
+    </p>
+    <ul>
+        <li><strong>Dropdown</strong>
+            Para criarmos um dropdown, vamos primeiro inserir todo o conteudo que iremos esconder para ser mostrado quando o usario ligar <br>
+            Da seguinte forma.
+
+            <div style="columns: 3; max-width: 800px;">
+                <div id="test-dropdown">
+                    Clique aqui !!!
+                    <div id="test-dropdown-content">
+                        <a href="#">PAG1</a> <br>
+                        <a href="#">PAG2</a> <br>
+                        <a href="#">PAG3</a>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="code">
+                        &lt;div id="test-dropdown"&gt;
+                            Clique aqui !!!  <br>
+                            &lt;div id="test-dropdown-content"&gt; <br>
+                                &lt;a href="#"PAG1&lt;/a&gt; <br>
+                                &lt;a href="#"PAG2&lt;/a&gt; <br>
+                                &lt;a href="#"PAG3&lt;/a&gt;
+
+                    </span>
+                </div>
+                <div id="test-dropdown-style">
+                    <span class="code">
+
+                        #test-dropdown:hover #test-dropdown-content{
+                            display: block;
+                        }
+                        #test-dropdown-content{
+                            display: none;
+                        }
+                    </span>
+                </div>
+            </div>
+            <p>O Segredo é o display, onde mostramos o conteudo com o atributo none, e o dropdown que e onde clicaremos ou passaremos o mouse por cima como block, para que o conteudo seja exibido</p>
+        </li>
+        <li>
+            <strong>Javascript = function</strong>
+            A Logica desta magica funciona da seguinte forma <br>
+
+            <span class="code">
+            &lt;span id="menu" class="material-symbols-outlined" onclick="clickMenu()"&gt;
+                <span class="parenteses" style="background-color: black">
+                    O Iceberg, um span comum com o parametro onclick, onde colocamos o atributo clickMenu().. abaixo configuramos o que ele ira fazer.
+                </span>
+                <br>
+            &lt;script &gt; <span class="parenteses" style="background-color: black;">
+                a tag script, colocamos sempre no fim do conteudo body de nosso site, e la colocamos todo tipo de codigo javascript !!
+            </span><br>
+                <br>
+                function clickMenu() {  <span class="parenteses" style="background-color: black;">
+                    É aqui que começamos a dar funcoes ao atributo onclick</span>  <br>
+                    if (itens.style.display == 'block') { <span class="parenteses" style="background-color: black;"">
+                        If (se) itens(classe escolhida).style.display (explique a ordem do estilo) == (dois = se resultando em igual, enquanto um unico representa o resultado que ira aplicar)
+                    </span><br>
+                        itens.style.display = 'none' <br>
+                    } else { <span class="parenteses" style="background-color: black;">
+                        else (caso contrario) o display mostrara block
+                    </span> <br>
+                    itens.style.display = 'block' <br> 
+                } <br>
+            } <br>
+            &lt;/script &gt; <br>
+            </span>
+            
+        </li>
+    
+    </ul>
+    </body>
+</html>
+
+
+

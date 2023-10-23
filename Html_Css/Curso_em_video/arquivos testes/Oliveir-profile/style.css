@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*font-family: 'Silkscreen, cursive;
+font-family: 'Fuzzy Bubbles', cursive;
+'Permanent Marker', cursive;*/
+
+* {
+    box-sizing: border-box
+}
+
+:root {
+    ---font-main: Silkscreen, cursive;
+    ---font-main2: Fuzzy Bubbles, cursive;
+
+    /*pallet de cores  -- v2 mudamos o estilo para preto e branco, mas vamos ver se conseguimos 
+    ---cor1: #e0e1dd;
+    ---cor2: #778DA9;
+    ---cor3: #415a77;
+    ---cor4: #1b263b;
+    ---cor5: #0D1B2A;*/
+    ---cor1: #b5b5b5;
+    ---cor2: #8c8c8c;
+    ---cor3: #666666;
+    ---cor4: #515151;
+    ---cor5: #3c3c3c;
+
+    ---font1: Permanent Marker, display;
+}
+
+header {
+    height: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+header h1 {
+    float: left;
+    width: 30%;
+    padding-bottom: 13px;
+}
+
+#h1 {
+    font-family: var(---font1);
+    color: var(---cor5);
+    text-decoration: underline;
+
+}
+
+#redes {
+    float: left;
+    padding: 8% 0% 0% 29%;
+}
+
+nav img {
+    width: 50px;
+    padding: 10px 0px;
+}
+
+article#aboutme {
+    text-align: center;
+    width: 50%;
+    margin: 15% 25%;
+    border: 3px solid black;
+}
+
+#foto {
+    margin: 0% 0% 0% 0%;
+    max-width: 326px;
+    position: absolute;
+    left: 36%;
+    bottom: 30%;
+}
+
+#foto img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+    border: thin solid black;
+    margin: auto;
+    min-width: 720px;
+    background-image: url(imagens/Naturalidade.jpg);
+    background-size: 100%;
+}
+
+
+div:hover h2 {
+    display: block;
+}
+
+div#more {
+    width: 125px;
+    height: 125px;
+    background-color: rgba(184, 184, 184, 0);
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+
+h2{
+    width: 300px;
+    height: 350px;
+    border: thin solid rgba(124, 121, 121, 0);
+    background-color: rgb(160, 41, 41);
+    border-radius: 20px;
+    position: absolute;
+    top: 147%;
+    right: 62%;
+    font-weight: normal;
+    padding: 1em;
+   display: none;
+}
+/*Pseudos*/
+p::selection{
+    color: #3c3c3c;
+    font-family: var(---font1);
+}

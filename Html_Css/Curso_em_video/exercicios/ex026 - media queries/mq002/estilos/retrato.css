@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*Dispositivo retrato   (PORTRAIT)*/
+
+html, body {
+    background-image: url('../imagens/cev-portrait.jpg');
+    background-position: center bottom;
+}

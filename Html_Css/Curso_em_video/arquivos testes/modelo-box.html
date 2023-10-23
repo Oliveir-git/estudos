@@ -1,0 +1,165 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+    <title>Modelos de caixas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    article, aside {
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 2px 2px 10px black;
+        font-weight: bolder;
+    }
+    article:hover, aside:hover{
+          background-color: yellow;
+    }
+
+    article p, aside p{
+        margin-top:9em
+    }
+    header, nav, section, main {
+        font-weight: bold;
+    }
+    header h1:hover, nav h1:hover, section h1:hover, main h1:hover {
+        background-image: linear-gradient(to right, orange,yellow,red)
+
+    }  
+    header h1, nav h1, section h1, main h1 {
+        font-size: 16px;
+        width: 5em;
+    }
+body, header, nav, main, section, article, aside {
+    border: thin solid  black;
+    width: 300px;
+    height: 300px;
+}
+header {
+    width: 1300px;
+    height: 120px;
+}
+nav {
+    width: 1289px;
+    height: 80px;
+    margin: auto;
+}
+a > li {
+    border-right: thin solid black;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+body {
+    width: 1300px;
+    height: 1000px;
+}
+main {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    margin-top: 2em;
+    min-width: 400px;
+    max-width: 800px;
+}
+section {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    margin-top: 2em;
+}
+section > h1 {
+    position: static;
+}
+article {
+    background-color: aqua;    
+    margin: auto;
+    width: 300px;
+  
+}
+.float-right{
+    display: inline-block;
+    margin-left: 3em;
+}
+.float-left{
+    float: left;
+    margin-left: 4em;
+}
+aside {
+    width: 800px;
+    margin: auto;
+    margin-top: 2em;
+    background-color: grey;
+    border: thin solid black;
+    border-radius: 5px;
+    box-shadow: 5px 2px 10px;
+}
+footer {
+    background-color: aliceblue;
+    border: thin solid black;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(204, 203, 203);
+}
+footer > p {
+    text-align: center;
+}
+strong {
+    color: red;
+    text-decoration: underline;
+}
+:empty{
+          color: aqua;
+          font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+strong:hover {
+    color: rgb(255, 0, 221);
+    text-shadow: 1px 1px 3px red;
+}
+</style>
+
+</head>
+<body>
+<header><h1>
+    
+        <h1>HEADER</h1>
+</h1>
+    <nav><H1>NAV</H1>
+    <ul>
+        <a href="">
+            <li>1</li>
+        </a>
+        <a href="">
+            <li>2</li>
+        </a>
+        <a href="">
+            <li>3</li>
+        </a>
+    </ul> </nav>
+</header>
+<main><h1>
+        MAIN
+</h1> <section>
+        <h1>SECTION </h1>
+        <article class="float-left"> <p>ARTICLE 1</p></article>
+        <article class="float-right"><p>ARTICLE 2</p></article>
+        <aside><p>ASIDE</p>  </aside>
+    </section>
+    <footer> <p>FOOTER ( SITE CRIADO POR <strong>Breguenayte</strong>)</p></footer>
+</main>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

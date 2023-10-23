@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt </title>
+    <link rel="stylesheet" href="../styles/pagstyle.css">
+    <link rel="shortcut icon" href="../imagens/script-java.png" type="image/x-icon">
+</head>
+<body>
+<main>
+<div id="modulo-a">
+    <h1>
+        Java Script curso em video Aula 2 cap 1 anotações
+    </h1>
+    <p>
+        Anotações gerais <br>
+        <strong>Começo da internet</strong> 1970 - presidente da Russia em meados de 1970 - DARPA - ARPANET (varias universidades tecnologicas inclusivas, restritas para pesquisadores de universidades e governos)
+            - INTERNET (1993) em Genebera Timothy John Berners-Lee que
+            Pesiquisou um meio de unir os conteudos atraves de ligações que foi formado a HTML , URL e a WWW <br>
+            Mosaic - primeiro navegador  por Mark Anderson!! - <br>
+            Netscape (1994)- Mozila - Brendon Nike inventor do Mocca, Livescript(Java) (1995) - <br>
+            JavaScript criada pela Netscape que foi copiada pela Microsoft adaptada e tambem inspirada no Mosaic criando entao o <strong>Internet Explorer</strong>
+            onde a Netscape teve a ideia de padronizar pela ECMA para patentear seu codigo, diferente da J
+            Script criada e copiada pela Microsoft <br>
+            Windows 95 foi o primeiro computador a ser imbutido o IE com um movimento idealizado para derrubar a Netscape acabando com a concorrencia. <br>
+            (2002) FUNDAÇÃO MOZILA - Firefox top, um revolucionario e sobrevimente do Netscape porem sobreviveu até (2008) onde entao foi criado o Google Chrome focado em JavaScript com um motor (v8) <span class="parenteses">
+            Motores que todo navagedor tem, no caso Firefox (spidermonkey), Safari (Nitro), Opera (Blink) Micr.EDGE(Chakra) </span> <br>
+            (2010) NodeJS - Maquina que roda JV fora do navegador baseado no codigo aberto que o V8 disponibilizou <br>
+            LEIA E RELEIA A SEQUENCIA
+        . <br>
+    <h2>ECMASCRIPT</h2>
+    <p>
+        Padronização da Linguagem Javascript <br>
+        1 - (1997) v1.0 - (1998) v2.0 - (1999) v2.0 - por conta da popularidade e hipe da epoca nunca foi lançado a versao 4.0 -
+        (2009) ES5 - (2015) ES6 - e depois veio algumas novidades que teremos que aprender apos o curso. <br>
+        <strong style="text-transform: uppercase;"> APOS O JAVASCRIPT, ESTUDAR JQUERY, ANGULAR, REACT, VOW, ELECTRO </strong>
+    </p>
+
+    <h2>Aula 3 capitulo 1 anotações</h2>
+    <p>
+    <ol>
+        <li>Quem criou o JavaScript ?</li>
+        Netscape <br>
+        <li>Java e JavaScript possui alguma relação?</li>
+        Somente a função "IF" que veio da linguagem "C" <br>
+        <li>EcmaScript, tem relação com JavaScript ? </li>
+        sim, porem a EcmaScript foi a versao padronizada pela Netscape em 1997 <br>
+        <li>Qual linguagem foi criada o program whatsapp web desktop? </li>
+        Foi criada pela linguagem Javascript com o FRAMEWORK 'Electro' que serve como uma bibiliteca para este tipo de interatividade
+    </ul>
+    </p>
+        <h1>Primeiros passos no JavaScript</h1>
+    <p>
+        <strong>Referencias</strong> LIVROS - JavaScript um guia definitivo por David.. - JavaScript guia do programador por Mauricio -
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">Guia de referencia da Mozila</a>
+            e o <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">Guia de referencia da ECMA</a> <br>
+
+    <p>
+        Aula 04 Cap 01 - Fizemos os primeiros passos utilizando alguns codigos simples :
+    <ol>
+
+        <li><span class="code">window.alert ('Hello, World')</span>
+            Ao iniciar a pagina, o usuario recebe um alerta Hello, World
+        </li>
+        <li><span class="code">window.confirm ('Esta gostando do JS?')</span>
+            Um Alerta onde o usuario devera enviar, ou cancelar o questionario do autor
+        </li>
+        <li><span class="code">window.prompt('Qual seu nome?')</span>
+            Um Alerta onde o usuario ira preencher um texto e enviar ao autor
+        </li>
+    </ol>
+        <span class="parenteses">OBS - estilos CSS ou conteudo HTML só aparecerao apos a interação do usuario com o Alert</span> <br>
+        <a href="../../../JavaScript/exercicios/aula04/ex001.html" target="_blank">Clique para ver o exercicio</a>
+    </p>
+
+</div>
+<div id="modulo-b">
+    <h1>Modulo B</h1>
+        <h2>Aula 05 cap 02</h2>
+    <p>
+        TIPOS DE DADOS E VARIAVEIS - <br>
+        <span class="parenteses">Curiosidade = "//" serve para comentar em uma unica linha em JavaScript, dentro da tag
+            &lt;script&gt;
+        </span> <br>
+        Variaveis = contem atribuições com resultados numericos <br>
+        String = Sao atribuições com resultados em textos <br>
+        Regras para identificadores (Variaveis e Strings)
+    <ol>
+        <li>Podem começar com letras, com $ ou com _</li>
+        <li>Nao podem começar com numeros !! Mas podem combinar letras com numeros...</li>
+        <li>Podem utilizar acentos ou simbolos</li>
+        <li>Nao podem conter espaços</li>
+        <li>Nao podem ser palavras ja reservadas em algum outro identificador</li>
+    </ol>
+    Dicas <br>
+    <ul>
+        <li>Letras maiusculas e minusculas fazem sim diferença</li>
+        <li>Tente utilizar nomes que fazem sentido a função</li>
+    </ul>
+        TIPOS PRIMITIVOS PRIMORDIAIS <br>
+        Nomes para os valores das Variaveis
+        <strong>Number</strong> = podem utilizar numeros inteiros (1 ou 2 ou 3) ou numeros reais (1.2 ou 1.3 ou 2.4) <br>
+        <strong>String</strong> = utilizam textos, mas nao so textos - numeros que nao sao considerados reais ou inteiros, como um numero de telefone ou CPF.. sao chamados de Strings <br>
+        <strong>Boolean</strong> Valores que atribuim 0 (false) ou 1 (true) para darmos regras ao nosso codigo <br>
+        E ALGUMAS OUTRAS DEMAIS  Como.... <br>
+        <strong>Null</strong> <br>
+        <strong>Undefined</strong> <br>
+        <strong>Object</strong> <br>
+        <strong>Array</strong> <br>
+        <strong>Function</strong> <br>
+        Testee , utilizando o comando typeof podemos descobrir o tipo primitivo de um identificador .. ex <br>
+        > typeof 2.0 <br>
+        'number' <br>
+        > typeof null  <br>
+        'object' <br>
+        > typeof "Hello" <br>
+        'string' <br>
+    </p>
+    <h1>
+        Aula 06 CAP 02
+    </h1>
+    <p>
+        Começamos a criar variaveis. <br>
+        Com o exemplo da Aula 05, refizemos o processo e adicionamos coisas a mais... por exemplo <br>
+        Criamos a var <br>
+        <span class="code">var nome = window.prompt('Qual seu nome?')</span> <br>
+        em seguida adicionamos que apos o alert, utilizamos a reposta do usuario pra prosseguir com mais outra mensagem ex.. <br>
+        <span class="code" >window.prompt ('Prazer em te conhecer ' + nome + '!!')</span>...
+        Utilizamos o sinal '+' para adicionar o resultado da varivel 'nome' somando o resultado com o nosso codigo.. que nos retornou.. <br>
+        <strong>Prazer em te conhecer Rafael!!</strong>
+        <span class="parenteses">
+            O SINAL DE + SERVE PARA CONCATENAÇÃO E TAMBEM SOMA, o JavaScript diferencia a resultado, definindo o tipo primordial... no caso ele sempre vai retornar como string
+        </span> <br>
+        Conversoes <br>
+        Number.parseint (n) para numeros inteiros. <br>
+        Number.parseFloat (n) para numeros reais... <br>
+        Number (n) o Java script descide (melhor opção para o caso de soma, que une os dois casos e o torna 'auto') <br>
+        Com isto convertemos o tipo de identificador e assim o Javascript identifica principalmente em codigos de soma <br>
+        <br>
+        Para resolver o problema de soma que o javascript identificou o n1 e n2 como 'strings' alteramos o codigo para a seguinte forma ... <br>
+        <span class="code">
+            var n1 = Number.parseInt(window.prompt ('Digite um numero')); <br>
+            var n2 = Number.parseInt(window.prompt ('Digite outro numero')) <br>
+        </span>
+        Nao esquecendo de abrir parentenses no codigo (window....('Conteudo a ser mostrado')).. <br>
+        Mas e se quisermos converter de Number para String ? <br>
+        Da mesma forma.. porem ao inves de colocarmos Number(variavel tambem chamado de OPERADORES) deixaremos String(variavel) ou até mesmo como var.toString() ex.. <br>
+        <span class="code">
+            var soma = Number(window.prompt ('Digite um numero'));
+        </span><br>
+        Formatação de novas Strings ... <br>
+        Template String = entre crase (`` o acento ao inverso) Podemos colocar e concatenar Strings com o sinal ${variavel} ao inves do + ... exemplo <br>
+        <span class="code">
+            > `O aluno ${nome} tirou a nota ${nota} e é bonitao com a idade de ${idade}` <br>
+        'O aluno Rafael tirou a nota 10 e é bonitao com a idade de 41' <br>
+    </span>
+    Alguns comandos simples <br>
+    var.lengh() - Quantos caracteres a String tem <br>
+    var.toUpperCase() - Tudo para maiuscula <br>
+    var.toUpperCase() - tudo para minuscula  <br>
+    EX.. <br>
+    <span class="code">
+        &lt;script&gt; <br>
+            var nome = window.prompt ('Qual é seu nome?'); <br>
+            document.write(`Olá <strong>${nome}</strong>. <br> Seu nome tem ${nome.length} letras <br>`) <br>
+            document.write(`Seu nome em maiusculas é <strong>${nome.toUpperCase()}</strong> <br>`) <br>
+            document.write(`Seu nome em minusculas é <strong>${nome.toLowerCase()}</strong>`) <br>
+        &lt;/script&gt; <br>
+    </span> Resultando ....
+    <div class="azul">
+        <div class="xis">X</div>
+        <div class="image">
+            <img src="../imagens/testes/aula06cap02javacript.png" alt="imagem testando o codigo Javascipt">
+        </div>
+    </div>
+    <span class="parenteses">
+        DICA = Podemos dentro da string adicionar tags, como h1, br, p, etc...
+    </span> <br>
+    Uma outra transformação para numeros <br>
+    
+        <span class="code">
+            > var n1 = 1545.5 <br>
+            undefined <br>
+            > n1 <br>
+            1545.5 <br>
+            > n1.toFixed(3) <span class="parenteses">toFixed atribui o numero de casas apos o ponto para 3</span> <br>
+            '1545.500' <br>
+            > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) <span class="parentenses">Descide que o valor sera em reais. Podemos tambem informar dolar(USD) ou euros(EUR) etc...</span> <br>
+            'R$ 1.545,50' <br>
+        </span>
+        </p> 
+    
+        <h1>Aula 07 cap 02</h1>
+        <p>
+    Questoes
+    <ol>
+        <li>Como é possivel guardar o valor digitado em um prompt() dentro de uma variavel?</li>
+        var nome = window.prompt ('Qual é seu nome?') ... isto faz com que os dados que usuario colocou seja salvo na variavel.
+        <li>Como fazer com que um numero digitado em um prompt() possa ser usado em calculos??</li>
+        Definimos o tipo primordial da string para number com o codigo .. Number(var) ou Number.parseFloat(var)
+        <li>Como transformar o resultado em um valor monetario em reais? <br>
+        criamos a variavel e damos o codigo var.toLolaleString('pt-BR', {style: 'currency': currency: 'BRL' })
+        </li>
+    </ol>
+    Exemplo... <br>
+    <span class="code">
+        var sal = Number(window.prompt ('Quanto é seu salario?')) <br>
+        var sal = sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) <br>
+        document.write (` &lt;br&gt; Voce recebe por mes ${sal}`) <br>
+    </span>
+    </p>
+    <h2>OPERADORES PT 1</h2>
+    <p>
+    Aritimeticos - Atribuição - Relacionais - Logicos - Ternario <br>
+    Numeros e somas e divisoes aritimeticas exemplos <br>
+        <u>ARITIMETICOS</u> <br>
+    5 + 2 = 7 - ótimo é uma soma ... <br>
+    5 - 2 = 3 - ótimo é uma subtração <br>
+    5 * 2 = 10 - Se trata de multiplicação <br>
+    5 / 2 = 2.5 = Se trata de uma divisao contendo um numero inteiro(float number)
+    <strong>
+    5 % 2 = NAO SE TRATA DE PORCENTAGEM</strong>, e sim na soma do resto da divisao, por exemplo 5 / 2 = 2 (em numeros reais).. 2 * 2 = 4 <strong>restando 1 que o valor da %</strong>
+    Basicamente paramos no momento em que teremos que colocar um numero inteiro apos a virgula....
+        <br>
+        5 ** 2 = se trata de elevação(potencia), 5² = 5*5 <strong style="color: white"> 25 </strong>
+        <br>
+    <span class="parenteses">
+        Dica importante = A ORDEM DE PRECENDENCIA - =  5 + 3 / 2 = 6.5.... QUANDO NA OPERAÇÃO TIVERMOS SOMA E DIVISAO JUNTOS... FAZEMOS A DIVISAO PRIMEIRO.. ao inves de 4, 3/2=1.5 + 5 = <strong>6.5</strong> <br>
+        POREM... assim como a matematica, mudamos a regra adicionado "parentenses" na soma (5+3) ex... <br>
+        (5 + 3) / 2 =<strong> 4 </strong> <br>
+    </span>
+    Se liga .... <br>
+    <div class="azul">
+        <div class="xis">X</div>
+        <div class="image">
+            <img src="../imagens/../imagens/testes/nodejs-somasedivisoes.png" alt="Resultado da somas e divisos dando certo !!">
+        </div>
+    </div>
+    No JavaScript a ordem de precedencia procede de...  <br>
+    <ol>
+        <li>() parentenses</li>
+        <li>** ou potencias </li>
+        <li>* multiplicação - 4. / divisao - 5. % restante da divisao </li>
+        <li>e por fim 6. + SOMA e - SUBTRAÇÃO </li>
+    </ol>
+    <u>ATRIBUIÇÃO SIMPLES</u> EX.. <br>
+    <div class="azul">
+        <div class="xis">X</div>
+        <div class="image" id="atrib-ex">
+            <img src="../imagens/testes/atribuicoes-ex.png" alt="Exemplo de atribuições e sequencia aritimetica">
+            <div id="atrib-result"></div>
+        </div>
+    </div>
+    
+    <u>AUTO-ATRIBUIÇÕES</u> <br>
+    ex. <br>
+    var n = 3 <br>
+    n = n+4 <br>
+    <strong>n, deixa de ter o valor 3 e passa ter o valor de 3(n) + 4 = <span class="parentenses">7</span></strong>
+        e assim sequencialmente, sempre substituindo a variavel pelo valor dela somado... <br>
+    
+        <u>ATRIBUIÇÕES SIMPLES</u> <br>
+    Podemos substituir a atribuiçao dos sinais acima <strong>caso queremos somar a variavel n novamente</strong>
+    da seguinte forma ... <br>
+    var n = 3 <br>
+    n +=4 = 7 <br>
+    <span class="parenteses">Isto vale para qualquer sinal aritimetico, por exemplo n -=4, ou n *=4... tudo isso sem ter que repetir a sequencia do , pois o navegador ja sabe que é ele o referido</span> <br>
+    <u>ATRIBUIÇÃO INCREMENTADA</u> <br>
+    Na programação, e muito comum utilizarmos o valor 1 para somar, ou subtrair "Muito comum" e para isto tem tambem uma segunda forma de calcularmos quando queremos utilizar o numero 1... <br>
+    ao inves de fazermos var n = n + 1, fazemos
+    <strong>n++, ou para sub.. n-- (somente) </strong> ou inverso tambem resolve como <strong>--n, ou ++n</strong>... soma da mesma forma
+        
+    </p>
+    <h2> AULA 08 cap 02</h2>
+    <p>
+    <u>OPERADORES P2 - RELACIONAIS - LOGICOS E TERNARIOS</u>  <br>
+        RELACIONAIS <br>
+        <strong>
+            > , < , >=, <=, ==, !=
+        </strong> <br>
+        Relacionais, relacionam o numero ligado ao relacional com true (1verdadeiro) ou false(0falso)...Se ligaaa <br>
+        <div class="parenteses">É IMPORTNANTE DIZER QUE A TODA EXPRESSAO QUE TEM UM RESULTADO RELACIONAL VAI SER UM RESULTLADO "BOLEANO" UM RESULTADO QUE EXISTEM 2 VALORES (NO NOSSO CASO É TRUE OU FLASE)</div>
+        &gt; maior <br>
+        &lt; menor <br>
+        &gt; =  maior ou igual <br>
+        &lt; = menor ou igual <br>
+        == igual <br>
+        != = igual ou nao é igual <br>
+        ex <br>
+        5 > 2 - true <span class="parentenses"> cinco é maior que dois</span> <br>
+        7 >= 4 - true <span class="parenteses"> SETE é "maior ou igual" a 4</span> <br>
+        7 != 7 - false <span class="parenteses"> SETE NAO É DIFERENTE QUE SETE 2 </span>
+    
+        <u>OPERADOR DE IDENTIDADE</u> <br>
+        5 == 5 = TRUE <br>
+        5 == '5' = FALSE <span class="parenteses">5 é igual a 5, porem nao identifica strings ('')</span> <br>
+        para resolver isto, utilizamos o OPERADOR DE IDENTIDADE, onde ele identifica ate mesmo o tipo primordial .. ex.. <br>
+        <strong> 5 === '5'</strong> = true , pois os valores totais se resultam a um valor final ... <br>
+        <u>OPERADORES LOGICOS - !, && OU ||</u> <br>
+        <strong>!</strong> = NAO (quero uma caneta que nao pode ser azul = qualquer caneta que nao for azul é aceita) <br>
+        <strong>&&</strong> = CONJUNÇÃO ( e esta mas pode ser esta tambem;;; = 1, 2 - = quero uma caneta azul e preta (qualquer caneta azul e preta e é aceita))  <br>
+        <strong>|| </strong>DISJUNÇÃO (ou or else) (quero uma caneta azul ou preta = se qualquer uma das duas forem entregas
+        beleza, o problema é se nenhum for entregue !!) <br>
+        <h2>
+        Mas qual o sentido de tudo isso??
+        </h2>
+        Temos ordem a seguir... um navegador semente vai colocar as oderens dos... <br>
+        <ol>
+        <li>ARITIMETICOS</li>
+        <li>OPERACIONAIS</li>
+        <li>IDENTIDADES(LOGICOS)</li>
+        </ol>
+        <strong>1(!)</strong> NAO 2<strong> E(&&)</strong> 3 <strong>OU(!!)</strong> ... (ORDEM PARA SE SEGUIR)
+        <u>SEGUE A ORDEM DE PRECEDENCIA</u>
+        <div class="azul" id="precedencia">
+        <div class="xis" style="margin-left:5%">X</div>
+        <div class="image">
+            <img src="../imagens/testes/ordemdeprecedencia.png" alt="Ordem de precedencia a ser seguida">
+        </div>
+        </div>
+        <u>TERNARIO</u> <br>
+        É chamado de Ternario, por que ele depedente de 3 passos seguindo os testes logicos...  <br>
+        <ol>
+        <div class="flex-left">
+            <li>teste (?)</li>
+            <li>true (:)</li>
+            <li>false</li>
+        </div>
+        </ol>
+        EXEMPLO... <br>
+        <span class="code">
+        var media = 7 <br>
+        media > 7<strong>?</strong>'APROVADO' <strong>;</strong> 'REPROVADO' <br>
+        REPROVADO <br>
+        </span>
+        <span class="parenteses">
+        MUITO PARECIDO COM A FORMULA =SE() do Excel...
+    </span>
+    </p>
+</div>
+
+<div id="modulo-c">
+    <h1>AULA 09 - cap 03</h1>
+    <p>
+        DOCUMENT OBJECT MODEL - 
+        ARVORE DOM -
+        MANIPULACAO DOM
+        <div class="breakrow"></div>
+        <u>O QUE É DOM ?</u><br>
+        <div class="breakrow"></div>
+        DOCUMENT OBJECT MODEL - Conjunto de obejtos dentro do navegador que nos da acesso aos componentes do site <br>
+        <div class="breakrow"></div>
+        ARVORE DOM - Raiz (window) ... Dentro da window temos algums valores .. <br>
+        location : diz qual é a localizaçao do seu site(qual a url, qual a pagina atual, qual foi a pag anterior) <br>
+        document : documento atual <br>
+        history: guarda as informações e dados sobre o que o usuario interagiu no site <br>
+        <div class="breakrow"></div>
+        Dentro de document temos > HTML que se relacionam com 2 childs o <strong>head</strong> e o <strong>body</strong>
+        SEGUE A ORDEM HIERARQUICA <br>
+        <div class="breakrow"></div>
+        <div class="azul" style="width: 268px; height: 500px; margin:auto">
+            <div class="xis">X</div>
+            <div class="image" style="border-radius: 20px">
+            <img src="../imagens/testes/arvoredom.png" style="border-radius: 20px;width: 268px; height: 500px;" alt="arvore dom">
+            </div>
+        </div>
+        <div class="breakrow"></div>
+        Mas como podemos utilizar esta ordem ?? <br>
+        <span class="code">
+            window.document.write ()
+        </span>
+        Busca na arvore window.. seguindo para o ducumento com o codigo para escrever algo <br>
+        ou
+        <span class="code">
+            window.document.write(window.document.URL)
+        </span>
+        Ele ira buscar dentro da raiz window..seguindo documento, escrevendo o caminho da URL 
+        
+        <u>SELECIONANDO</u> <br>
+        Existem 5 formas de selecionarmos os elementos <br>
+
+    <ol>
+        <li>por Marca(pela tag)</li>
+        acessamos pelo metodo : getElementsByTagName('tag')[qual tag?]
+        exemplo <br>
+
+        <span class="code">
+        &lt;script&gt;    
+            var p1 = window.document.getElementsByTagName('p')[0]
+            window.document.write('Esta escrito assim: '+ p1.innerText)
+        &lt;/script&gt;
+            </span>
+            Utililzamos <strong>[]</strong> para selecionar qual 'p' ira mudar, pela ordem de que 0 é primeiro paragrafo, 1 seria o segundo e assim sequencialmente 
+            <span class="parenteses">RECOMENDADO UTILIZAR QUANDO getElement<strong>s</strong> fica no plural</span>
+        <li><u>por ID</u></li>
+        getElementById('')
+        <li><u>por Nome</u></li>
+        getElementsByName('')
+        <li><u>por Classe</u></li>
+        getElementsByClassName('')
+        <li><u>por Seletor</u></li>
+        o metodo mais recente, nele podemos selecionar qualquer objeto da seguinte forma... <br>
+        <span class="code">
+            var d = window.document.querySelector('div#msg') <br>
+            msg.style.background = 'black' <br>
+        </span>
+        </ol>
+    </p>
+    <h1>AULA 10 - cap 03</h1>
+    <p>
+        <u>EVENTOS DOM</u> <br>
+        mouseenter = quando o mouse passa por cima <br>
+        mouseout = quando o mouse sair do elemento <br>
+        mousemove= quando o mouse se move dentro do elemento <br>
+        mousedown = quando o usario clica e segura no elemento <br>
+        mouseup = quando o usuario solta o botao de click do mouse <br>
+        click - só clicando no elemento <br>
+
+        MASS.. nao sao estes todos os eventos em JavaScript.. sao apenas os principais <br>
+        Quer dar uma olhada na lista de inteira de eventos ? <a href="https://developer.mozilla.org/en-US/docs/Web/Events#event_listing" target="_blank">Clique aqui</a>
+        
+        <u>FUNÇÕES</u> <span class="parenteses">
+            (function)
+        </span> <br>
+        Funções, ativam eventos JS que contem "blocos" de codigos entre colchetes {} <br>
+        Toda function precisa de um nome que atribui a função dela ex.. <br>
+        <span class="code">
+            function <strong>clicar('nao precisa colocar nada a menos que queiramos adicionar parametros')</strong>{
+                bloco de codigo...
+            }
+        </span> <br>
+        Note.. a funcao clicar, deixamos no elemento HTML onde queremos que o evento ocorra.. <br>
+        Podemos fazer das seguintes formas <br>
+        <span class="code">&lt;div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"&gt;</span> <br>
+        mas tambem podemos deixar dentro do elemento &lt;script&gt; metodo chamo de <strong>listeners</strong> desta forma ... <br>
+
+        <span class="code">
+            &lt;script&gt; <br>
+                var a = window.document.getElementById('area') <br>
+                a.addEventListener('click', clicar) <br>
+                a.addEventListener('mouseenter', entrar) <br>
+                a.addEventListener('mouseout', sair) <br>
+            &lt;/script&gt; <br>
+        </span>
+    
+        Desta forma, deixamos de poluir o HTML com eventos onclick, ou onmouseenter ..etc..
+        <span class="parenteses">
+            O DEVTOOLS COSTUMA IDENTIFICAR ERROS EM ESCRITAS EM JAVASCRIPT... DE UMA OLHADA SEMPRE QUE PRECISAR !!
+        </span>
+    </p> 
+    <h1>
+        AULA 11 - cap 03
+    </h1>
+    <p>
+
+        <u>CONDIÇÕES</u> <br>
+        Desvio condicional - Criado para dividir o resultado de um evento com if ou else como se fossem 0 e 1<br>
+        IF (condição - true)
+        <br>
+        ELSE false 
+        <br>
+        Tipos de condição - 
+        condição simples - somente uma condição com if <br>
+        condição composta - com if e else e mais de um resultado <br>
+        Na pratica, o codigo ficou assim <br>
+    <span class="code">
+            function aoClicar(){ <br>
+                var vel = document.getElementById('ivel') <br>
+                 var xvel = Number(vel.value) <br>
+                var res = document.getElementById('result') <br>
+                 if (xvel > 60) { <br>
+                    res.innerHTML = `&lt;p&gt;
+                                        Sua velocidade é de ${xvel}km/h <br>
+                                        Voce foi <strong>MULTADO</strong> !! <br>
+                                        Por favor, dirija com cuidado ! &lt;/p&gt; <br>`
+                } <br>
+                else { <br>
+                     res.innerHTML = ` &lt;p&gt; <br>
+                                    Sua velocidade é de ${xvel} <br>
+                                    Parabens !! Continue assim &lt;/p&gt;`
+                }
+            }
+    </span>
+    </p>
+    <h1>Aula 12 cap 03</h1>
+    <p>
+        CONDIÇÃO ANINHADA = Conseguimos colocar varias codições compostas colocando uma condição apos a outra <br>
+        SE LIGA ... <br>
+    <div style="width: 451px; height: 501px; margin: 40px auto" class="azul">
+        <div class="xis">X</div>
+        <div style="width: 451px; height: 501px;" class="image">
+            <img style="width: 100%; height: 501px;" src="../imagens/testes/aninhamentodecondicoes.jpg" alt="MAPA DE ANINHAMENTO DE CONDIÇÕES">
+        </div>
+    </div>
+        <div class="parenteses">
+            Dica = quer saber a data atual??
+            basta criar as variaveis <br>
+            <span class="code">
+            var agora = new Date() <br>
+            var atual = agora.getHours() <br>
+        </span>
+    </div> 
+
+        <u>CONDIÇÃO MULTIPLA</u> = Diferente da condição aninhanda, a Condição multipla faz com que .. <br>
+        <span class="code">
+            switch (expressao) { <br>
+                case valor 1: <br>
+                break <br>
+
+                case valor 2: <br>
+                break <br>
+
+                case valor 3: <br>
+                break <br>
+
+                default:  <br>
+            }
+        </span>
+        <span class="code">DENTRO DE CADA BLOCO UTILIZAMOS O VALOR BREAK, sem os breaks os codigos executam todos em sequencia, sem pensar na consequencia !!</span>
+        TAMBEM, O SWITCH É IDEAL PARA RESULTADOS FIXOS E NAO PARA RESULTADO QUE DEPENDA QUE OUTRA SEJA, IGUAL, MAIOR OU MENOR ETC... <br>
+        Na pratica fica assim <br>        
+
+        <div style="width: 200px; padding-left:15px"class="code">
+            switch(dia) { <br>
+                case 0: <br>
+                console.log ('Domingo') <br>
+                break <br>
+                <br>
+                case 1:<br>
+                console.log ('Segunda')<br>
+                break <br>
+                <br> 
+                case 2: <br>
+                console.log ('Terça') <br>
+                break <br>
+            
+                case 3: <br>
+                console.log ('Quarta') <br>
+                break <br>
+                <br>
+                case 4: <br>
+                console.log ('Quinta') <br>
+                break<br>
+                <br>
+                default: <br> 
+                console.log ('SUA DATA ESTA INCORRETA') <br>
+            }
+        </div>
+        <div class="parenteses">Aqui, caso o valor de dia retorne 0(para domingo) ou 1 (para segunda) e assim por diante... caso contrario ira retornar (SUA DATA ESTA INCORRETA)</div>
+
+    </p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>                
+
+
+
+
+</body>
+</html>

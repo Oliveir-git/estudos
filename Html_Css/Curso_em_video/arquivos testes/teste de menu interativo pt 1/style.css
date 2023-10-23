@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+
+}
+
+
+body {
+    background-image: linear-gradient(to left, white,#DFF3E4,#ECB0E1);
+    padding-color
+}
+
+main {
+    text-align: justify;
+}
+.posição-menu-esquerda {
+    position: absolute;
+    top: 150px;
+    font-weight: bold;
+}
+.border{
+    border:thin solid green;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 15%;
+    text-align: center;
+    text-decoration: underline;
+    background-color: orangered;
+}
+
+.menu {
+    border: thin solid black;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    position: static;
+   padding: 10px;
+   right:26%;
+   left: 15%;
+   top: 150px;
+   background-color: orangered;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: underline;
+
+}
+
+.noticia1 {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    top: 30%;
+    
+}
+.noticia2 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    top: 30%;
+}
+.noticia1, .noticia2 {
+    border: thin solid black
+}
+
+.propaganda-2 {
+    position: absolute;
+    right: 40%;
+    top: 6px;;
+    border: thin ridge black;
+}
+
+.propaganda-3 {
+    position: absolute;
+    right: 10%;
+    top: 6px;
+    border: thin ridge black;
+}

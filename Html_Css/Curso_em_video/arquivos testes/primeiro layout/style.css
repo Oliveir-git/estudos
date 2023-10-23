@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    max-width: 100%;
+    
+}
+
+/*IMAGEM DE LUA*/
+.lua1 {
+    position: absolute;
+    top: 40%;
+    left:  -24px;
+}
+.lua2 {
+    position: absolute;
+    top: 40%;
+    left:  215px;
+}
+.lua3 {
+    position: absolute;
+    top: 40%;
+    left:  460px;
+}
+.lua4 {
+    position: absolute;
+    top: 40%;
+    left:  750px;
+}
+.lua5 {
+    position: absolute;
+    top: 40%;
+    right:  24px;
+}
+/*COR DE FUNDO, HEIGHT, WIDTH E BORDA*/
+
+.background1 {
+    background-color: #ff99fa;
+    border: thin solid black;
+    padding: 15em;
+}
+.background2 {
+    background-color: #FFFF96; 
+    border:thin solid black;
+    padding: 15em;
+}
+
+.background3 {
+    background-color: #ff65d9;
+    border:thin solid black;
+    padding: 15em;
+}
+
+.background4 {
+    background-color: #ff82ba;
+    border:thin solid black;
+    padding: 15em;
+}
+
+.background5 {
+    background-color: #ffb4b7;
+    border:thin solid black;
+    padding: 10em;
+}
+/* COLOCAR BORDA E RADIUS (SE POSSIVEL COLOCAR A POSIÇÃO DA IMAGEM */
+.imagem1{
+    position: absolute;
+    left: 2em;
+    top: 50%;
+ 
+}
+
+.imagem2{
+    position: absolute;
+    left: 17em;
+    top: 50%;
+}
+
+.imagem3{
+    position: absolute;
+    left: 32em;
+    top: 50%;
+}
+
+.imagem4{
+    position: absolute;
+    left: 50em;
+    top: 50%;
+}
+
+.imagem5{
+    position: absolute;
+    right: 4em;
+    top: 50%;
+}
+
+/*ARREDONDAMENTO DAS IMAGENS*/
+div img {
+    border: thin solid;
+    border-radius: 50%;
+}
+
+span {
+}

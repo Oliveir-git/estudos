@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*PARA TELAS*/
+body{
+    margin: 0px;
+}
+header > h1 {
+    text-align: center;
+}
+nav {
+    background-color: gray;
+    margin: 0px;
+    padding:0;
+}
+ul{
+    padding: 0px 2px;
+}
+li {
+    display:inline-block;
+    padding: 15px 5px;
+    margin: 0px;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+}
+
+article {
+    margin: auto;
+    width: 600px;
+    
+}

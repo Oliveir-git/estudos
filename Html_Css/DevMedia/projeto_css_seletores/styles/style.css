@@ -1,0 +1,56 @@
+@charset "utf-8";
+* { margin: 0;
+    padding: 0;
+}
+:root {
+    --color1 : #DE8E37
+}
+body {
+    box-sizing: border-box;
+    width: 500px; margin: auto;
+}
+ul { display: block;} 
+a {
+    color: unset;
+}
+li {display: inline; padding: 0 20px;text-decoration: underline; }
+[name*="logo"] {
+    width: 300px;
+}
+h1{
+    border-top: 1px solid var(--color1); padding-top: 20px; margin-top: 20px;
+}
+[name*="produtos_padaria"] {width: 100%; padding: 10px 0;}
+[name*="secao_sobre"]
+{
+    display: flex; align-items: center; justify-content: center;
+}
+[name*="div_sobre"] {text-align: center;}
+[name*="secao_sobre"] h2 {
+    color: orange; font-weight: lighter; font-size: 20px;
+}
+/*SECAO 2*/
+[name*="secao_produtos"] 
+{   color: white;
+    text-align: center;
+    padding: 15px 50px;
+    background-color: var(--color1);
+}
+[name*="secao_produtos"] 
+img { width: 300px;}
+
+[name*="div_produtos"]
+h3, [name*="secao_produtos"] h4{ line-height:40px}
+
+[name*="div_produtos"] 
+p{
+    padding: 10px 0;
+}
+
+/*ASIDE*/
+.span_bold {
+    font-weight: bold;
+}
+[name*="div_aside"]{
+    text-align: center; padding: 20px 0; line-height: 30px;
+}

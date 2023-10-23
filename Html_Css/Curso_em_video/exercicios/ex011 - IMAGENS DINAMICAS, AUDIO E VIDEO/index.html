@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMAGENS DINAMICAS, AUDIO E VIDEO</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+<source media="(max-width: 700px)" srcset="imagens/foto-p.png" alt="Foto de tamanho pequeno" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" alt="Foto de tamanho medio" type="image/png">
+    <img src="imagens/foto-g.png" alt="Foto de tamanho grande">
+</picture>
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprender a reproduzir audios em HTML5</p>
+<audio preload="metadata" controls autoplay loop alt="Audio do podcast do guanabara">
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg"> <!--para arquivos Media player utlizar a sigla mpeg-->
+<source src="midia/guanacast-33.mp3" type="audio/mpeg"> </audio>
+<P>Seu navegador nao suporta audio</P>
+</audio>
+<h1>Videos</h1>
+<p>Aqui vai um video maroto para testarmos da mesma forma como fizemos com o audio</p>
+<video width="600" poster="midia/assinatura.jpg" controls autoplay>
+    <source src="midia/How Search Works.mp4"> 
+    <!--- Coloque pelo menos 3 tipos de arquivos com formatos diferentes para nao dar problema-->
+    <p>Infelizmente seu navegador nao suporta formato MP4</p>
+</video>
+<h3>Este é um video incoporado pelo youtube</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BNHR6IQJGZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+
+</html>

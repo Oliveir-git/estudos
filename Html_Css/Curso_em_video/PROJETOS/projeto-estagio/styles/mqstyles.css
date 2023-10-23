@@ -1,0 +1,104 @@
+@charset 'utf-8';
+/*FOR 450px*/
+@media screen and (min-width:450px) and (max-width:768px) {
+
+}
+/*FOR 768px*/
+@media screen and (min-width:768px)  {
+  #divlogo {
+    background-color: white;
+  }
+  span#ilogo 
+  { /*RED. DO LOGO*/
+    padding-left: 20%; 
+  }
+  span#search {
+    padding-right: 20%;
+  }
+
+  header {
+    z-index: -1;
+    height: 450px; 
+    background: white url(../imagens/london.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  nav {
+    margin: 40px auto 0 auto !important
+  }
+/*travel-world*/
+  nav,section#travel-world{
+    margin: auto;
+    width: 70vw;
+  }
+  section > form > span > input {
+    width: 30%;
+  }
+  .divisao {
+    padding: 0 10px;
+    columns: 2;
+  }
+  section#travel-world > form > button {
+    margin-top:-5px;
+  }
+  section#travel-world{
+    height: 217px;
+  }
+/*Good Offers*/
+article#a-good-offers {
+  columns: 2;
+}
+#d1,#d2{height: 50%; padding: 5px 0}
+#d1 > div, #d2 > div {
+  width: 40%; height: 95%; margin-right: 10px;
+  background-size: cover;  background-position: center center; background-repeat: no-repeat;
+  display: inline-block;
+  /*Text*/
+}
+div.text{
+  text-align: left; color: white; font-size: 20px; text-indent: 15px;
+  transform: translate(0%, 700%);
+}
+div.flexbox {
+height: 400px;
+}
+#cinque {
+  background: black url(../imagens/cinqueterre.jpg);
+  height: 400px; width: 100%; display: inline-block; background-repeat: no-repeat;
+}
+
+  /*EXPLORE NATURE*/
+  section#explore-nature{
+    columns:2;
+  }
+  section#explore-nature > h1, section#explore-nature > p {
+    column-span: all; text-align: left;
+  }
+}
+/*FOR 1366px*/
+@media screen and (min-width:1366px){
+ 
+  #divlogo {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .logo, span#ilogo {
+    position: relative;
+    left: 1px ; padding-left: 0;
+  }
+  span#search {
+    float: right;
+    padding: 0;
+  }
+  main {
+    max-width: 80vw; margin: auto;
+  }
+  body, html {
+    background-color: rgba(219, 219, 219, 0.288);;
+  }
+  #article2 > div > img, #article2 > div {
+    padding: 0 ; margin: 0;
+    min-width: none; max-width: none;
+    width: 50%; height: 50%;
+  }
+}

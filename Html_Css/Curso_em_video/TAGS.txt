@@ -1,0 +1,2 @@
+<adress> destaca e da sentido a um endereço
+<style> contem iformações de estilo para o documento ou parte dele (geralmente se usa em CSS)

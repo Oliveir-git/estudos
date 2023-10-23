@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*CONFIGURAÇÕES MOBILE FIRST*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    padding: 0;
+    margin:o;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+    background-image: (url(../imagens/back-phone.jpg));
+    background-position: center center;
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.603);
+    width: 80vw;
+    border-radius: 5px;
+    margin: auto;
+}

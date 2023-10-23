@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        main {
+            background-image: linear-gradient(to bottom, rgb(6,6,6), rgb(20, 20, 20));
+            height: 100vh;
+        }
+
+        #imagens{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            width: 70vw;
+        }
+        #imagens img {
+            padding: 0px 10px;
+            border-radius: 15px;
+        }
+        aside {
+            padding: 10px 10px;
+            border: thin solid white;
+            display: inline-block;
+            position: relative;
+            top: 40%; left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            
+        }
+        h1{
+            text-align: center;
+            color: white;
+            padding-top: 160px;
+            font-size: 3em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        blockquote {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Quem esta assistindo?</h1>
+        <div id="imagens">
+            <a href="x"><img src="imagens/erika.png" alt="Icone Erika"></a>
+            <a href="x"><img src="imagens/julia.png" alt="Icone Julia"></a>
+            <a href="x"><img src="imagens/kalleu.png" alt="Icone Kalleu"></a>
+            <a href="x"><img src="imagens/sueli.png" alt="Icone Sueli"></a>
+            <a href="x"><img src="imagens/rafael.png" alt="Icone Rafa"></a>
+        </div>
+        <aside>
+            <a href="x">
+                <div>Gerenciar perfis</div>
+            </a>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap');
+ /*
+ 'Delicious Handrawn', cursive
+ 'Edu NSW ACT Foundation', cursive
+ 'Press Start 2P', cursive;
+ */
+
+
+
+
+:root {
+    --font-h1:'Delicious Handrawn';
+    --font-p: 'Edu NSW ACT Foundation', cursive;
+    --font-date: 'Press Start 2P', cursive;
+    --verde: #42c920;
+}
+* {
+    box-sizing: border-box;
+    font-family: var(--font-p);
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    
+}
+html {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+body {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
+    background-color: black;
+    width: 80vw; transition: width 0.3s;
+    margin: auto;
+}
+main {
+    padding: 20px;
+}
+.div-image{
+    width: 80vw; max-height: 500px;
+}
+.div-image img {
+    width: 100%; height: 100%; 
+    border-radius: 10px 0px 10px 0px;
+}
+.code {
+    font-size: 15px; letter-spacing: 2px;
+    font-variant: small-caps; text-transform: lowercase;
+    color: black; font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 3px; 
+}
+.code > strong {
+    color: black; text-shadow: 1px 1px 5px white
+}
+.code > .parenteses {
+    color: red;
+} 
+strong {
+    color: var(--verde);
+    font-size: 20px;
+}
+body {
+    padding: 0px 10px;
+}
+
+p, h1, h2 {
+ padding: 10px 0;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+p:first-child{
+    text-indent: 3em;
+    color: red;
+}
+h1 {
+    font-family: var(--font-h1);
+    color: var(--verde);
+    text-shadow: 1px 2px 5px #01ff16;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+h2 {
+    color: var(--verde);
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+li {
+    margin-left: 20px
+}
+
+
+    /*CLASSES*/
+    .flex-left {
+        display: flex;
+        flex-direction: row;
+        }
+   
+    .breakrow {
+        margin-bottom: 10px;
+    }
+    .parenteses{ 
+        text-transform: uppercase;
+        font-style: consolas;
+        font-weight: bold;
+        color: grey;
+        text-shadow:3px 3px 6px red;
+    }
+    /*ID's*/
+     #precedencia {
+        width: 20%;
+    }
+    #atrib-ex {
+        columns: 2;
+    }
+    #atrib-result{
+      width: 100%; height: 100%;
+      
+      background-image:url(../imagens/testes/atribuicoes-result.png);
+      background-color: black;
+      background-position: left center;
+      background-size: contain; background-repeat: no-repeat;
+    }
+    #test-background-position {
+        columns: 2;
+    }
+    #test-dropdown:hover #test-dropdown-content{
+        display: block;
+    }
+    #test-dropdown-content{
+        display: none;
+    }
+/* CAIXA DE RESULTADOS*/
+
+.azul{
+
+    text-align: center;
+    border: 1px 1px black; border-radius: 15px 15px 0 0 ;
+    background-color: rgb(70, 70, 255);
+    height: 100%; width: 100%; max-width: 80%;
+    padding: 1.3% 0;
+    
+}
+.xis{
+    border: 1px solid white; border-radius: 5px;
+    background-color: red;
+    color:white;
+    max-height: 20px; width: 20px;
+    text-align: center ; vertical-align: baseline;
+    margin: 0 0 0.5%  90%; padding: 0.9% 0.5%;
+    font-size: 1.5vw;
+
+}
+
+.image{
+    border: 1px 1px black;
+    background-color: rgb(228, 225, 225);
+    height: 100%; width: 99%;
+    max-width: 99%;
+    margin: 0 auto;
+    font-size: 1.5w; color: black;
+    text-align: left; font-weight: bold;
+}
+.image >img   {
+    width: 100%;
+    height: 100%;
+}
+.date {
+    color: var(--verde); text-shadow: 3px 3px 10px #01ff16;
+    text-transform: uppercase; 
+    font-family: var(--font-date);
+    margin: 10px 30px;
+}
+
+
+/*MEDIA QUERYES*/
+@media only screen and (min-width: 1000px) {
+    .xis {
+        margin-left: 95% ;
+    }
+}
+@media only screen and (max-width: 500px){
+    .xis {
+        margin-left: 80%
+    }
+    body,html {
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width: 250px){
+    .xis {
+        visibility: hidden;
+    }
+}
+

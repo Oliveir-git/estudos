@@ -1,0 +1,38 @@
+@charset 'utf-8';
+article#a-good-offers {
+    columns: 2;
+}
+#d1,#d2{height: 50%; padding: 5px 0}
+#d1 > div, #d2 > div {
+    width: 40%; height: 95%; margin-right: 10px;
+    background-size: cover;  background-position: center center; background-repeat: no-repeat;
+    display: inline-block;
+    /*Text*/
+}
+div.text{
+    text-align: left; color: white; font-size: 20px; text-indent: 15px;
+    transform: translate(0%, 700%);
+}
+div.flexbox {
+height: 400px;
+}
+#cinque {
+    background: black url(../imagens/cinqueterre.jpg);
+    height: 400px; width: 100%; display: inline-block; background-repeat: no-repeat;
+}
+
+#new-york {
+    background: black url(../imagens/newyork.jpg);
+}
+
+#san-fransisco {
+    background: black url(../imagens/sanfran.jpg);
+}
+
+#pisa {
+    background: black url(../imagens/pisa.jpg);
+}
+
+#paris {
+    background: black url(../imagens/paris.jpg);
+}

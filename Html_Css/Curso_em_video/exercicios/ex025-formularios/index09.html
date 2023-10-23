@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario output</title>
+</head>
+<body>
+    <h1>Output com range calculado</h1>
+    <label for="irange">Calculo</label>
+    <input type="range" name="range" value="5" id="irange" min="0" max="10"
+    oninput="ival.innerHTML = Number(irange.value)">
+    <output id="ival">5</output>
+</body>
+</html>

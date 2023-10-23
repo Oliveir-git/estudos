@@ -1,0 +1,29 @@
+@charset "uft-8";
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+nav {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(104, 104, 104);
+    height: 100vh;
+}
+
+main {
+    border-radius: 5px;
+    padding: 50px 10px;
+    width: 60vw;
+    margin:10px auto;
+    text-align: center;
+    background-color: orange;
+}
+article > p {
+    overflow-y: auto;
+}

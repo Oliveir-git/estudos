@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If or Else do ex 008</title>
+</head>
+<body>
+    <h1>
+        Sistemas de multas
+    </h1>
+    <p>
+        <label for="ivel">Coloque sua velocidade : </label>
+        <input type="number" name="vel" id="ivel"> 
+        <button type="submit" onclick="aoClicar()">Conferir</button>
+    </p>
+    <div id="result"></div>
+<script>
+    function aoClicar() {
+        var vel = document.getElementById('ivel')
+        var xvel = Number(vel.value)
+        var res = document.getElementById('result')
+
+        if (xvel > 60) {
+            res.innerHTML = `<p>
+                                Sua velocidade é de ${xvel}km/h <br>
+                                Voce foi <strong>MULTADO</strong> !! <br>
+                                Por favor, dirija com cuidado ! <p>`
+        }
+        else {
+            res.innerHTML = `<p>
+                            Sua velocidade é de ${xvel} <br>
+                            Parabens !! Continue assim </p>`
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+/*
+font-family: 'Passion One', cursive;
+font-family: 'Sriracha', cursive;
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+:root {
+    ---font1: Passion One, cursive;
+    ---font2: Sriracha, cursive;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > a{
+    color: white;
+
+}
+header > h1 {
+font-variant: small-caps;  /*ANOTAAAAR*/
+padding-top: 10vh;
+font-size: 10vw;
+font-family: var(---font1);
+}
+header p {
+    padding-bottom: 10vh;
+    text-decoration: none;
+}
+section {
+    padding: 10vh 10px;
+    font-size: 4vw;
+    
+}
+section > p {  
+    font-family: var(---font2);
+    line-height: 2em;
+
+}
+section.normal{
+    background-color: white;
+}
+section.fundopreto {
+    background-color: rgb(36, 36, 36);
+}
+.fundopreto > p {
+    background-color: rgba(59, 59, 59, 0.623);
+    max-width: 50vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+section#ladybug {
+    background: black url(../imagens/background001.jpg) no-repeat center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#book {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 2em;
+    font-variant: small-caps;
+    padding-top: 10px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold
+}

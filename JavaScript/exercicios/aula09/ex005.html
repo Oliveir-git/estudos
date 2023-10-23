@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEIROS PASSOS COM DOM</title>
+
+    <style>
+        body{
+            font: normal 10pt Arial;
+            background: rgb(68, 125, 199) ;
+            color: white; font-variant: ;
+        }        
+    </style>
+</head>
+<body>
+    <h1>INICIANDO OS ESTUDOS COM DOM</h1>
+    <p id="msg">Aqui vai o resultado</p>
+    <p>
+        Aprendendo a usar <strong>DOM</strong> em Java Script
+    </p>
+    <div name="teste">Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+        p1.style.background = 'black'
+        p1.style.fontWeight = 'bold'
+        p1.style.fontVariant = 'small-caps'
+        
+        var d = window.document.getElementById('msg').innerHTML = 'OLÁ' ;
+
+        var test = window.document.querySelector('#teste' = '7+8')
+        document.write('test')
+
+        
+         
+        
+
+    </script>
+</body>
+</html>

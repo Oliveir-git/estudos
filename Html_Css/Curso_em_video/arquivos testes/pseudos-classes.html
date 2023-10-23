@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Pseudo classe e Pseudo Elemento</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                margin: 0;
+            }
+            .hide {
+                display: none;
+            }
+            div:hover h2 { /*AO PASSAR O MOUSE, FIQUE VISIVEL!!*/
+                 display: block;
+            }
+            .background-color:hover {
+                background-color: aqua;
+            }
+            .color:hover{
+                color:palevioletred;
+                font-weight: 900;
+            }
+            .simbols:hover{
+                content: 'HIHIHIHIHI';
+                
+            }
+           a:link {
+             color: darkred;
+             font-weight:300;
+           }
+           a:visited{
+            display: none;
+           }
+           a:active{
+             font-family: display;
+             font-weight: bolder;
+           }
+           div:focus {
+            background-color: grey;
+           }
+
+        </style>
+    </head>
+<body><div>
+    <h1>Lá vai um teste Hover</h1>
+    <h2 class="hide">Invisivel</h2></div>
+    <h2 class="color">Mudando de cor ao passar o mouse</h2>
+    <h2 class="background-color">mudando o background</h2>
+    <h2 class="simbols"> colocando simbolos</h2>
+<hr>
+<h1>Um teste diferente</h1></h2>
+         <a href="https/facebook.com.br">
+             <h2>Link</h2>
+         </a>
+         <a href="">
+             <h2>Empity</h2>
+         </a>
+         
+         <div>
+             <h2>focus</h2>
+         </div>
+</body>
+</html>

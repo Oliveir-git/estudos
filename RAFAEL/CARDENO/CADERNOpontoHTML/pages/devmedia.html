@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devmedia (Potencia Tech) de 12/06/2023 a 12/12/2023</title>
+    <link rel="stylesheet" href="../styles/pagstyle.css">
+</head>
+<body>
+    <h2>
+        Aula do dia 13/06/2023 Introdução ao Front-End </h2>
+    <h3>Sites estaticos e Dinamicos</h3>
+    <p>
+        <ul>
+            <li>Site Estatico: Possui apenas o front-end - Sites mais simples que possuem HTML/CSS E GERALMENTE JAVASCRIPT</li>
+            <li>Site Dinamico: Possui Front-end e back-end - Sao Sites que precisam que o front-end tenha acesso a um dado espeficco do servidor constantemente, como pra atualizar um horario, ou status de produto se ainda teria ou nao em estoque,  ou até quando compramos ingresso online o site atualiza constantemente estes dados com o back-end e o front-end interagindo</li>
+        </ul>
+    </p>
+    <h2>Aula dia 2 - 14/06/2023 Tags Basicas</h2>
+    <p>Curiosidade, existem 6 tipos de h1,h2,h3,h4 <span class="parenteses">
+        Obs : utilize apenas uma tag h1 por pagina .. .tag H1 informa aos buscadores sobre o que se trata a sua página e que esta pode influenciar na sua classificação
+    </span>
+</p>
+<h3>Levando um usuario a um ponto da pagina</h3>
+<p> &lt;a href="#primeiro-produto"> Neste exemplo.. podemos indicar que ao clicar no link, o usuario ira para o elemento com id #primeiro-produto 
+    <b>Curiosidade</b> <span class="parenteses"> A tag 'a' pode ser usada tambem para quando o usuario precise ligar para um telefone ou enviar algum e-mail
+    </span>
+    <b>Curiosidade</b> <span class="parenteses">
+        utilizando o atributo 'title' dentro da tag img, podemos criar um tooltip que ira aparecer quando passarmos o mouse
+    </span>
+</p>
+<h2>AULA DIA 20/JUN/2023</h2>
+
+<h3>Meta Tags (Tags de cabeçalhos)</h3>
+<h3>Description <span class="parenteses">MUITOO IMPORTANTE</span></h3>
+<p>A metatag Description e invisivel ao usuario, mas é usada para auxiliar os buscadores do google com a descriçção de sua pagina ... &lt;meta name="description" content="Este é a descrição da pagina como por exemplo = São milhares de Cursos,
+DevCasts, Códigos e Artigos sobre Java, JavaScript, PHP, Delphi, Banco de dados, HTML, CSS, C#, C++, Python e .NET. Acesse agora!" <br>
+Conseguimos colocar varias com o que podemos chamar de hashtags que vao auxliar o buscador.
+</p>
+<h3>
+    Robots
+</h3>
+<span class="parenteses">Outra Tag muitoo IMPORTANTE</span>
+<p>com o uso da tag &lt;meta name="robots" content="noindex"> Faz com que o navegador reconheça que aquela pagina nao sera incluida nos buscadores do google, util para paginas de formularios, ou administrativas onde impeça a entrada direta do usuario.</p>
+<h3>
+    Nofolow
+</h3>
+<p>
+    Outro util que nao se é usado muito, é pra quando queremos que separe a associação de links da nossa pagina como links que usuarios enviam em comentarios por exemplo. <br>
+    Assim os buscadores nao assemelham links 3ceiros (OBS podemos utilizar nofolow e noindex desta forma : &lt;meta name="robots" content="noindex, nofolow")
+</p>
+<p>
+    <b>
+        TODO BUSCADOR ACESSA O CONTEUDO DE PAGINAS EM BUSCA DE INFORMAÇÕES COMO TITULO,DESCIÇÃO E LINKS
+    </b>
+</p>
+<h2>    
+    Aula dia 25junho2023
+</h2>
+<h3>INTRODUÇÃO AO CSS ... <span class="parenteses">CURIOSIDADES</span></h3>
+<ul>
+    <li>O padrão de cor RGB utilza valores de 0 a 255</li>
+    <li>Ordem Hexadecimal - 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - A - B - C - D - E - F, Tambem podemos representar as cores com 2 valores ou somente um ex : #FFF ou #FFFFFF</li>
+</ul>
+
+<h2>AULA dia 27junho2023</h2>
+<p>
+    <strong>
+        Como utilizar tamanhos proporcionais para nao danificar e destorcer a qualidade ao da imagem ao utilizar width e height
+        
+    </strong> <br>Uma imagem em estilo retrato pode ter uma proporção de 2:3. Nesse caso, a altura é 1,5(resto) vez maior do que a largura. Portanto, a imagem pode ter 500 px × 750 px, 1.500 px × 2.250 px etc.
+    imagens 1:1 são imagens de tamanho iguais (quadradas)
+</p>
+
+<h2>Aula dia 09julho2023</h2>
+<!--Listas
+pre
+-->
+<h3>    
+    Lista de Definição
+</h3>
+<ul><span class="code">
+    <code>
+            <li><strong>&lt;dl> &lt;/dl></strong> - abertura e fechamento de uma lista;</li>
+            <li><strong>&lt;dt> &lt;/dt></strong> - abertura e fechamento de um termo;</li>
+            <li><strong>&lt;dd> &lt;/dd></strong> - abertura e fechamento de uma descrição.</li>
+    </code>
+</span>
+</ul>
+<h3 style="line-height: 60px;">Exemplo de como se utilizar uma lista de denição com a semantica correta</h3>
+<p><span class="code">
+    <code>
+            &lt;dl> <br>
+                &lt;dt>Front-End&lt;/dt> <br>
+                &lt;dd>Toda parte visual de um site, onde o usuário interage diretamente.&lt;/dd> <br>
+    
+                &lt;dt>Back-End&lt;/dt> <br>
+                &lt;dd>Estrutura por trás das aplicações, que suporta todas as ações do usuário.&lt;/dd> <br>
+            &lt;/dl>
+    </code>
+</span>
+</p>
+<h3 style="line-height: 60px;">
+     Exemplos de como utilizar &lt;ol type=""
+</h3>
+<p>
+             <strong>&lt;ol type="1"</strong> - Ordenação numérica (padrão) <br>
+             <strong>&lt;ol type="a"</strong> - Ordenação alfabetica minúscula <br>
+             <strong>&lt;ol type="A"</strong> - Ordenação alfabetica maiúscula <br>
+             <strong>&lt;ol type="i"</strong> - Numerais romanos minúsculos <br>
+             <strong>&lt;ol type="I"</strong> - Numerais romanos maiúsculos <br>
+     ou <br>
+     <code>
+        &lt;ul type=<strong>"disc"</strong> Faz uma bolinha cheia <br>
+        &lt;ul type=<strong>"square"</strong> Faz uma lista de quadrados <br>
+        &lt;ul type=<strong>"circle"</strong> - Faz uma lista com bolinhas <br>
+        &lt;ul type=<strong>"none"</strong> - Remove a marcação da lista <br>
+     </code>
+</p>
+<h3 style="line-height: 60px;">
+    UM JEITO INTERESSANTE DE USAR LISTAS, É QUE PODEMOS FAZER LISTAS DENTRO DE LISTAS
+</h3>
+<p style="text-align: center;">
+    <b>Exemplo</b> <br>
+    <div class="azul"><div class="xis">X</div> <div class="image">
+            <span class="code">
+                <code>
+                    &lt;ul&gt; //Ordenação principal <br>
+                    &lt;li&gt; //Lista principal <br>
+                    &lt;h3&gt;//TITULO DA LISTA &lt;/h3&gt; <br>
+                     &lt;ul type="disc"&gt; //Lista secundaria <br>
+                    &lt;li&gt; Primeiro item &lt;/li&gt; <br>
+                    &lt;li&gt; Segundo item &lt;/li&gt; <br>
+                    &lt;li&gt; Terceiro item &lt;/li&gt; <br>
+                    &lt;/ul&gt; //Fim da lista segundaria <br>
+                    &lt;/li&gt; //Fim da linha principal <br>
+                </code>
+    </div> </div>   
+    </span>
+       <span style=" display:block; text-align: center; line-height: 40px;">Como esta sendo exibido</span>
+    
+    <div style="width:200px" class="image"  >
+        <img src="../imagens/testes/exemplo_de_lista_combinada.png" style="image-orientation: from-image;" alt="exemplo de lista combinada">
+    </div>
+</p>
+<p>    
+     <strong>
+         Utilizar o <code>&lt;ol start="numero que ira iniciar"</code>
+          Podemos definir um inicio personalizado, e tambem há o atributo <code><strong>reversed</strong></code> que faz com que a lista fique com a contagem reversa (nao sei a utilidade, mas tai)
+     </strong>
+</p>
+
+<h2>
+    AULA DIA 12/10/2023
+</h2>
+<h3></h3>
+<p>
+    
+</p>
+
+
+
+
+
+
+</body>
+</html>

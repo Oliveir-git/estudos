@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    max-width: 99vw;
+    max-height: 99vh;
+}
+main {
+    margin: auto;
+}
+div#galaxy {
+    height:  99vh;
+    background: black url("imagens/espaco.jpg") no-repeat center center;
+   background-size: cover;
+
+}
+
+#astronaut {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+   transform: translate(-50%, -50%);
+}
